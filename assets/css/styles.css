@@ -1,0 +1,96 @@
+body {
+  font-size: 16px;
+}
+
+
+.header {
+  /*background: #f5f8f9 !important;*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav-item {
+  padding: 8px 20px;
+}
+
+.nav-item a:hover {
+  color: #5CA595;
+}
+
+.CLASS1 {
+  padding: 41px 0px;
+  background: #f5f8f9;
+  /*border-bottom-left-radius: 44px;*/
+  /*border-bottom-right-radius: 60px;*/
+}
+
+.CLASS2 {
+  padding: 90px 8px;
+}
+
+.service-block {
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  padding: 40px 20px;
+  margin-top: 0.5rem!important;
+  margin-bottom: 0.5rem!important;
+  transition: all .3s linear;
+}
+
+.service-blocks {
+  padding: 2px;
+}
+
+.service-block:hover {
+  background: #5CA595;
+  color: #fff;
+}
+
+.service-block h5 {
+  margin: 24px 0px 8px;
+  font-size: 20px;
+}
+
+.service-block h6 {
+  font-weight: 300;
+  line-height: 25.6px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: #161e54 !important;
+}
+
+
+a { 
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: #5CA595 !important;
+  font-weight: bold;
+}
+
+.btn-link, .btn-link:hover {
+  color: #6dc0ae !important;
+  text-decoration: none;
+  padding-left: 0;
+}
+
+/* Footer-ში სოც მედიის იკონები */
+.container.text-white.py-4.py-lg-5.socNetwork.d-block.d-lg-none.no-wrap a {
+  color: white;
+  padding: 12px;
+}
+
+
+.team-img img {
+  width: 630px;
+  /* height: 527px; */
+}

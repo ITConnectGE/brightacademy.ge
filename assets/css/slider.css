@@ -1,0 +1,43 @@
+.half-bg {
+  background: linear-gradient(to bottom, #5aa495 50%, #f6f6f6 50%);
+}
+
+.slide-image {
+  position: relative;
+  z-index: 1;
+  /*transition: opacity 0.5s ease-in-out;*/
+  display: none;
+  /*opacity: 0;*/
+}
+
+.slide-button {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bs-border-color-translucent);
+  border: none;
+  font-size: 24px;
+  height: auto;
+  cursor: pointer;
+}
+
+.slide-button:hover {
+  background: var(--bs-focus-ring-color);
+}
+
+#prevBtn {
+  position: relative;
+  top: auto;
+  left: 0;
+}
+
+#nextBtn {
+  position: relative;
+  top: auto;
+  right: 0;
+}
+
+p {
+}
+

@@ -4,22 +4,28 @@
   overflow: hidden;
 }
 
-.slide-image {
+.team-img {
   position: relative;
+  min-height: 400px;
+}
+
+.slide-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   display: none;
   will-change: transform, opacity;
+  max-width: 90%;
 }
 
 .slide-button {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  z-index: 10;
   background: rgba(255, 255, 255, 0.8);
   border: none;
   font-size: 24px;
-  height: auto;
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 5px;
@@ -31,13 +37,9 @@
 }
 
 #prevBtn {
-  position: relative;
-  top: auto;
-  left: 0;
+  margin-right: 10px;
 }
 
 #nextBtn {
-  position: relative;
-  top: auto;
-  right: 0;
+  margin-left: 10px;
 }

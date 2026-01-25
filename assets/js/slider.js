@@ -5,11 +5,11 @@ $(document).ready(function () {
   let dragging = false;
   let animating = false;
   const images = $(".slide-image");
-  const transitionDuration = 400;
+  const transitionDuration = 500;
 
   // Initialize: hide all, show first
-  images.hide();
-  $(images[currentIndex]).show();
+  images.css({ opacity: 0, display: 'block' });
+  $(images[currentIndex]).css('opacity', 1);
 
   // Auto slide
   const slideInterval = 3500;
@@ -36,40 +36,17 @@ $(document).ready(function () {
     const currentImg = $(images[currentIndex]);
     const nextImg = $(images[newIndex]);
 
-    // Set up initial position for slide effect
-    const slideDistance = direction === 'right' ? 60 : -60;
-
-    // Prepare next image
-    nextImg.css({
-      display: 'block',
-      opacity: 0,
-      transform: `translateX(${slideDistance}px)`
-    });
-
-    // Animate current image out
+    // Simple crossfade - both images stacked, just change opacity
     currentImg.animate(
       { opacity: 0 },
-      {
-        duration: transitionDuration,
-        step: function(now) {
-          $(this).css('transform', `translateX(${-slideDistance * (1 - now)}px)`);
-        },
-        complete: function() {
-          $(this).hide().css({ opacity: 1, transform: 'translateX(0)' });
-        }
-      }
+      { duration: transitionDuration }
     );
 
-    // Animate next image in
     nextImg.animate(
       { opacity: 1 },
       {
         duration: transitionDuration,
-        step: function(now) {
-          $(this).css('transform', `translateX(${slideDistance * (1 - now)}px)`);
-        },
         complete: function() {
-          $(this).css('transform', 'translateX(0)');
           currentIndex = newIndex;
           animating = false;
         }
@@ -82,7 +59,6 @@ $(document).ready(function () {
   }
 
   function prevSlide() {
-    // Go back to previous slide
     goToSlide(previousIndex, 'left');
   }
 
@@ -102,7 +78,6 @@ $(document).ready(function () {
   // Touch/drag support
   $(".half-bg").on('mousedown touchstart', function (e) {
     if (animating) return;
-    e.preventDefault();
     initialX = e.type === 'touchstart' ? e.originalEvent.touches[0].clientX : e.clientX;
     dragging = true;
   });

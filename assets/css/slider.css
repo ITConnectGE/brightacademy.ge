@@ -7,6 +7,9 @@
 .team-img {
   position: relative;
   min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide-image {
@@ -15,9 +18,16 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  display: none;
-  will-change: transform, opacity;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
   max-width: 90%;
+  pointer-events: none;
+}
+
+.slide-image.active {
+  opacity: 1;
+  z-index: 2;
+  pointer-events: auto;
 }
 
 .slide-button {

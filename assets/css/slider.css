@@ -2,6 +2,7 @@
   background: linear-gradient(to bottom, #5aa495 50%, #f6f6f6 50%);
   position: relative;
   overflow: hidden;
+  touch-action: pan-y pinch-zoom;
 }
 
 .team-img {

@@ -71,25 +71,49 @@ $(document).ready(function () {
   });
 
   // Touch/drag support
+  let initialY = null;
+  let direction = null;
+
   $(".half-bg").on('mousedown touchstart', function (e) {
     if (animating) return;
-    initialX = e.type === 'touchstart' ? e.originalEvent.touches[0].clientX : e.clientX;
+    if (e.type === 'touchstart') {
+      initialX = e.originalEvent.touches[0].clientX;
+      initialY = e.originalEvent.touches[0].clientY;
+    } else {
+      initialX = e.clientX;
+    }
     dragging = true;
+    direction = null;
   });
 
   $(".half-bg").on('mousemove touchmove', function (e) {
-    if (dragging && !animating) {
-      const clientX = e.type === 'touchmove' ? e.originalEvent.touches[0].clientX : e.clientX;
-      const distance = clientX - initialX;
-      if (Math.abs(distance) > 50) {
-        distance < 0 ? nextSlide() : prevSlide();
-        dragging = false;
+    if (!dragging || animating) return;
+    const clientX = e.type === 'touchmove' ? e.originalEvent.touches[0].clientX : e.clientX;
+    const distanceX = clientX - initialX;
+
+    if (e.type === 'touchmove' && !direction) {
+      const clientY = e.originalEvent.touches[0].clientY;
+      const distanceY = clientY - initialY;
+      if (Math.abs(distanceX) > 10 || Math.abs(distanceY) > 10) {
+        direction = Math.abs(distanceX) > Math.abs(distanceY) ? 'horizontal' : 'vertical';
       }
+    }
+
+    if (e.type === 'touchmove' && direction === 'vertical') return;
+    if (e.type === 'touchmove' && direction === 'horizontal') {
+      e.preventDefault();
+    }
+
+    if (Math.abs(distanceX) > 40) {
+      distanceX < 0 ? nextSlide() : prevSlide();
+      dragging = false;
     }
   });
 
   $(".half-bg").on('mouseup touchend mouseleave', function () {
     dragging = false;
     initialX = null;
+    initialY = null;
+    direction = null;
   });
 });

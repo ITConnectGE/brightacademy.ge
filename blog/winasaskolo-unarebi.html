@@ -217,7 +217,7 @@
     </div>
   </section>
   <style>
-    .related-carousel{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;-ms-overflow-style:none;scrollbar-width:none;padding:10px 0;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;touch-action:pan-x;}
+    .related-carousel{display:flex;gap:20px;overflow-x:auto;overflow-y:hidden;scroll-behavior:smooth;-ms-overflow-style:none;scrollbar-width:none;padding:10px 0;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;touch-action:pan-x;overscroll-behavior-y:contain;}
     .related-carousel::-webkit-scrollbar{display:none;}
     .related-carousel .card{flex:0 0 350px;scroll-snap-align:start;}
     @media(max-width:576px){.related-carousel .card{flex:0 0 280px;scroll-snap-align:start;}}

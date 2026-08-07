@@ -1,0 +1,8 @@
+/* English strings for team/MaiaJavakhishvili.html */
+window.I18N = Object.assign(window.I18N || {}, {
+  'meta.title': "Maia Javakhishvili — Bright Academy",
+  'meta.desc': "Maia Javakhishvili — Clinical Neuropsychologist at Bright Academy, a child development center in Tbilisi.",
+
+  'bio.name': "Maia Javakhishvili",
+  'bio.text': "<strong>Education </strong><br /><br />2010-2012 Special Education — Master’s degree <br />University of Oslo, Norway <br /><br />2007-2009 Clinical Neuropsychology — Master’s degree <br />Ivane Javakhishvili Tbilisi State University <br /><br />2003-2007 General Psychology — Bachelor’s degree <br />Ivane Javakhishvili Tbilisi State University<br /><br /><strong>Work experience </strong><br />2021 Center for Education Development and Employment, project “Innovations in the Curriculum to Support Social Inclusion”, academic editor<br /><br />2018-2021 World Vision Georgia: ▪ Kakheti Regional Development Program; Sunday school for parents, trainer ▪ “Bullying Prevention in Pre-school Institutions”, trainer ▪ Positive Parenting — camp for parents, trainer ▪ project “Education for Better Parenting”, co-author of the collection, trainer 2 <br /><br />2019-2021 Ilia State University — visiting lecturer; subject: “Education of People with Learning Disabilities” <br /><br />2018-2019 T. Gagoshidze Neuropsychology Center — clinical neuropsychologist<br /><br />2012-2018 Institute of Neurology and Neuropsychology — clinical neuropsychologist <br /><br />2013 Ivane Javakhishvili Tbilisi State University — visiting lecturer;<br /> subjects: “Clinical Neuropsychology”, “Developmental Disorders” <br /><br />2009-2012 Center for Epilepsy Prevention and Control — clinical neuropsychologist<br /><br /><br />"
+});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="ka">
 
 <head>
     <meta charset="utf-8">
@@ -32,12 +32,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/styles.css?h=200e48989e36d3832116aa0051e58012">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
+  <link rel="stylesheet" href="../assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
+  <link rel="stylesheet" href="../assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
+  <link rel="stylesheet" href="../assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
+  <link rel="stylesheet" href="../assets/css/styles.css?h=df5d856d8be600000affa9b112cd3c87">
+  <link rel="stylesheet" href="../assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
+  <link rel="stylesheet" href="../assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
 
 <style>
 .whatsapp-float {
@@ -60,6 +60,22 @@
   transform: scale(1.1);
 }
 </style>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('ba-lang') !== 'en') return;
+        document.documentElement.className += ' i18n-pending';
+        var s = document.createElement('style');
+        s.id = 'i18n-fouc';
+        s.textContent = 'body{visibility:hidden}';
+        document.head.appendChild(s);
+        setTimeout(function () { if (s.parentNode) s.parentNode.removeChild(s); }, 2000);
+      } catch (e) {}
+    })();
+  </script>
+  <script src="../assets/i18n/en/common.js"></script>
+  <script src="../assets/i18n/en/blog/denveris-modeli.js"></script>
+  <script src="../assets/js/i18n.js" defer></script>
 </head>
 
 <body>
@@ -76,11 +92,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navcol-2">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../index.html">მთავარი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../brighacademy.html">ჩვენს შესახებ</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../services.html">სერვისები</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../blog.html">ბლოგი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../contact.html">კონტაქტი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../index.html" data-i18n="nav.home">მთავარი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../brighacademy.html" data-i18n="nav.about">ჩვენს შესახებ</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../services.html" data-i18n="nav.services">სერვისები</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../blog.html" data-i18n="nav.blog">ბლოგი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../contact.html" data-i18n="nav.contact">კონტაქტი</a></li>
+                <li class="nav-item lang-switch">
+                    <div class="lang-dropdown">
+                        <button class="lang-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><svg class="lang-globe" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"></path></svg><span class="lang-current">ქართული</span><svg class="lang-caret" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 9l6 6 6-6"></path></svg></button>
+                        <ul class="lang-menu" role="listbox">
+                            <li><button class="lang-option" type="button" role="option" data-lang="ka"><span>ქართული</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                            <li><button class="lang-option" type="button" role="option" data-lang="en"><span>English</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                        </ul>
+                    </div>
+                </li>
                 
             </ul>
         </div>
@@ -89,7 +114,7 @@
 <!-- End: Navbar Right Links -->
   <section class="container">
     <div>
-      <h1 style="margin-bottom: 51px;">დენვერის მოდელი</h1>
+      <h1 style="margin-bottom: 51px;" data-i18n-html="post.head1">დენვერის მოდელი</h1>
       <div>
         <!-- Start: 1 Row 2 Columns -->
         <div class="container">
@@ -97,7 +122,7 @@
             <div class="col-md-5 col-xxl-3" style="margin-bottom: 20px;"><img class="img-fluid" src="../assets/img/img4.jpg?h=0121f6b46899cc9bc8561c4d89608346" style="border-radius:35px;"></div>
             <div class="col-md-7 col-xxl-9" style="padding-right: 25px;padding-left: 25px;;">
               <h3><a href="#" style="text-decoration:none;"></a></h3>
-              <p>ადრეული განვითარების<br>დენვერის მოდელი არის განვითარებაზე, ქცევაზე, რუტინებზე და თამაშზე დაფუძნებული თერაპია,<br>რომელიც გამოიყენება აუტისტური სპექტრის მქონე ბავშვებთან 12 დან 60 თვემდე. დენვერის<br>მოდელი ორიენტირებულია მულტისასწავლო გარემოზე და &nbsp;სამიზნეს წარმოადგენს&nbsp; ადრეულ განვითარებასთან დაკავშირებული ყველა უნარი:<br>მეტყველება, თამაში, სოციალური ინტერაქცია, ყურადღების გაზიარება, შემეცნებითი უნარები,<br>იმიტაცია, მოტორული უნარები, თვით-მოვლა და ქცევა. აღნიშნულ უნარებზე მუშაობა მიმდნარეობს<br>კურიკულუმით, რომელიც მორგებულია აუტისტური სპექტრის განვითარების თავისებურებებზე.<br>&nbsp;მიდგომა&nbsp;<br>ნაწილობრივ სტრუქტურირებულია, რადგან ბავშვის პროფილის შეფასების შემდგომ, წერილობით<br>ყალიბდება განვითარების ყველა სფეროდან აღებული გრძელვადიანი სასწავლო მიზნები, მიზნების<br>მისაღწევად დასახული&nbsp; მოკლევადიანი საფეხურები<br>და &nbsp;შესაბამისად იგეგმება აქტივობები თუ თამაშები.&nbsp; აღნიშნული აქტივობების განხორციელებისას ყურადღება<br>ექცევა ასაკობრივად შესაბამისი სოციალური წესების შემოტანას და ბავშვისათვის მათ ეტაპობრივ<br>სწავლებას. <br><br><br>მოდელში მუშაობა იწყება<br>ბავშვის სოციალური ურთიერთობის&nbsp; წამოწევით<br>- ის უზრუნველყოფს დადებით<br>ბიძგს, მასტიმულირებელ გარემოს, სადაც აქცენტი კეთდება ბავშვის ინიციატივისა და კომუნიკაციის<br>სურვილის გაზრდაზე. მშობლებსა თუ სხვა პარტნიორებს ეხმარება<br>მოახდინონ ბავშვის მინიშნებების<br>და ემოციური გამოხატულების &nbsp;ინტერპრეტაცია და<br>განაგრძონ კომუნიკაცია. ამ ტექნიკების დაუყოვნებლივი ეფექტია კონკრეტული უნარების დასწავლის<br>შესაძლებლობების მკვეთრი ზრდა, რომელიც ჩაშენებულია აქტივობებში კონტექსტის შესაბამისად<br>და პროცესი მიმდინარეობს ბუნებრივად, სახლის ან ცენტრის გარემოში. თერაპევტი უზრუნველყოფს<br>პროცესში მშობლის ჩართულობას, მისთვის შესაბამისი რეკომენდაციების შემუშავებასა და<br>კონკრეტული სტრატეგიების სწავლებას.<br><br><br></p>
+              <p data-i18n-html="post.p1">ადრეული განვითარების<br>დენვერის მოდელი არის განვითარებაზე, ქცევაზე, რუტინებზე და თამაშზე დაფუძნებული თერაპია,<br>რომელიც გამოიყენება აუტისტური სპექტრის მქონე ბავშვებთან 12 დან 60 თვემდე. დენვერის<br>მოდელი ორიენტირებულია მულტისასწავლო გარემოზე და &nbsp;სამიზნეს წარმოადგენს&nbsp; ადრეულ განვითარებასთან დაკავშირებული ყველა უნარი:<br>მეტყველება, თამაში, სოციალური ინტერაქცია, ყურადღების გაზიარება, შემეცნებითი უნარები,<br>იმიტაცია, მოტორული უნარები, თვით-მოვლა და ქცევა. აღნიშნულ უნარებზე მუშაობა მიმდნარეობს<br>კურიკულუმით, რომელიც მორგებულია აუტისტური სპექტრის განვითარების თავისებურებებზე.<br>&nbsp;მიდგომა&nbsp;<br>ნაწილობრივ სტრუქტურირებულია, რადგან ბავშვის პროფილის შეფასების შემდგომ, წერილობით<br>ყალიბდება განვითარების ყველა სფეროდან აღებული გრძელვადიანი სასწავლო მიზნები, მიზნების<br>მისაღწევად დასახული&nbsp; მოკლევადიანი საფეხურები<br>და &nbsp;შესაბამისად იგეგმება აქტივობები თუ თამაშები.&nbsp; აღნიშნული აქტივობების განხორციელებისას ყურადღება<br>ექცევა ასაკობრივად შესაბამისი სოციალური წესების შემოტანას და ბავშვისათვის მათ ეტაპობრივ<br>სწავლებას. <br><br><br>მოდელში მუშაობა იწყება<br>ბავშვის სოციალური ურთიერთობის&nbsp; წამოწევით<br>- ის უზრუნველყოფს დადებით<br>ბიძგს, მასტიმულირებელ გარემოს, სადაც აქცენტი კეთდება ბავშვის ინიციატივისა და კომუნიკაციის<br>სურვილის გაზრდაზე. მშობლებსა თუ სხვა პარტნიორებს ეხმარება<br>მოახდინონ ბავშვის მინიშნებების<br>და ემოციური გამოხატულების &nbsp;ინტერპრეტაცია და<br>განაგრძონ კომუნიკაცია. ამ ტექნიკების დაუყოვნებლივი ეფექტია კონკრეტული უნარების დასწავლის<br>შესაძლებლობების მკვეთრი ზრდა, რომელიც ჩაშენებულია აქტივობებში კონტექსტის შესაბამისად<br>და პროცესი მიმდინარეობს ბუნებრივად, სახლის ან ცენტრის გარემოში. თერაპევტი უზრუნველყოფს<br>პროცესში მშობლის ჩართულობას, მისთვის შესაბამისი რეკომენდაციების შემუშავებასა და<br>კონკრეტული სტრატეგიების სწავლებას.<br><br><br></p>
               <hr>
             </div>
           </div>
@@ -118,50 +143,50 @@
     @media(max-width:768px){.related-btn{display:none;}}
   </style>
   <section class="container" style="margin-top: 50px;">
-    <h4 style="margin-bottom:25px;">სხვა ბლოგები:</h4>
+    <h4 style="margin-bottom:25px;" data-i18n="common.more_articles">სხვა ბლოგები:</h4>
     <div class="related-wrap">
       <button class="related-btn related-btn-prev" onclick="this.parentElement.querySelector('.related-carousel').scrollBy({left:-300,behavior:'smooth'})">&#8249;</button>
       <div class="related-carousel">
         <div class="card">
-          <a href="adreuli-intervencia.html"><img src="../assets/img/adreuli-intervencia-cover.jpeg" class="card-img-top" alt="ადრეული ინტერვენცია"></a>
+          <a href="adreuli-intervencia.html"><img src="../assets/img/adreuli-intervencia-cover.jpeg" class="card-img-top" alt="ადრეული ინტერვენცია" data-i18n-attr="alt:related.t.adreuli-intervencia"></a>
           <div class="card-body">
-            <a href="adreuli-intervencia.html"><h5 class="card-title">ბავშვთა განვითარების ადრეული იდენტიფიკაციისა და მხარდაჭერის პროექტი</h5></a>
-            <p class="card-text">აუტიზმის ცნობადობის ამაღლების მსოფლიო დღესთან დაკავშირებით, „ბრაით აკადემი" ახორციელებს სოციალურ პროექტს ...</p>
+            <a href="adreuli-intervencia.html"><h5 class="card-title" data-i18n="related.t.adreuli-intervencia">ბავშვთა განვითარების ადრეული იდენტიფიკაციისა და მხარდაჭერის პროექტი</h5></a>
+            <p class="card-text" data-i18n-html="related.e.adreuli-intervencia">აუტიზმის ცნობადობის ამაღლების მსოფლიო დღესთან დაკავშირებით, „ბრაით აკადემი" ახორციელებს სოციალურ პროექტს ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="michajvuloba.html"><img src="../assets/img/img32.jpg" class="card-img-top" alt="მიჯაჭვულობა"></a>
+          <a href="michajvuloba.html"><img src="../assets/img/img32.jpg" class="card-img-top" alt="მიჯაჭვულობა" data-i18n-attr="alt:related.t.michajvuloba"></a>
           <div class="card-body">
-            <a href="michajvuloba.html"><h5 class="card-title">მიჯაჭვულობა, ბავშვობისა და ზრდასრულობის განვითარების ფუნდამენტი</h5></a>
-            <p class="card-text">მიჯაჭვულობა არის ძლიერი ემოციური კავშირი რომელიც მყარდება ახალშობილსა და მასზე მზრუნველ ადამიანს შორის ...</p>
+            <a href="michajvuloba.html"><h5 class="card-title" data-i18n="related.t.michajvuloba">მიჯაჭვულობა, ბავშვობისა და ზრდასრულობის განვითარების ფუნდამენტი</h5></a>
+            <p class="card-text" data-i18n-html="related.e.michajvuloba">მიჯაჭვულობა არის ძლიერი ემოციური კავშირი რომელიც მყარდება ახალშობილსა და მასზე მზრუნველ ადამიანს შორის ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="winasaskolo-unarebi.html"><img src="../assets/img/winasaskolo-unarebi.jpg" class="card-img-top" alt="წინასასკოლო უნარები"></a>
+          <a href="winasaskolo-unarebi.html"><img src="../assets/img/winasaskolo-unarebi.jpg" class="card-img-top" alt="წინასასკოლო უნარები" data-i18n-attr="alt:related.t.winasaskolo-unarebi"></a>
           <div class="card-body">
-            <a href="winasaskolo-unarebi.html"><h5 class="card-title">წინასასკოლო უნარები</h5></a>
-            <p class="card-text">მშობლებს ხშირად უჩნდებათ კითხვა: "მზად არის თუ არა ჩემი შვილი სკოლისთვის?" ...</p>
+            <a href="winasaskolo-unarebi.html"><h5 class="card-title" data-i18n="related.t.winasaskolo-unarebi">წინასასკოლო უნარები</h5></a>
+            <p class="card-text" data-i18n-html="related.e.winasaskolo-unarebi">მშობლებს ხშირად უჩნდებათ კითხვა: "მზად არის თუ არა ჩემი შვილი სკოლისთვის?" ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="stresi-bavshvebshi.html"><img src="../assets/img/stresibavshvebshi.jpg" class="card-img-top" alt="სტრესი ბავშვებში"></a>
+          <a href="stresi-bavshvebshi.html"><img src="../assets/img/stresibavshvebshi.jpg" class="card-img-top" alt="სტრესი ბავშვებში" data-i18n-attr="alt:related.t.stresi-bavshvebshi"></a>
           <div class="card-body">
-            <a href="stresi-bavshvebshi.html"><h5 class="card-title">როგორ ამოვიცნოთ ბავშვებში ფსიქოლოგიური სტრესის ნიშნები</h5></a>
-            <p class="card-text">ბავშვები სხვადასხვანაირად რეაგირებენ მათ ირგვლივ არსებულ უარყოფით მოვლენებზე ...</p>
+            <a href="stresi-bavshvebshi.html"><h5 class="card-title" data-i18n="related.t.stresi-bavshvebshi">როგორ ამოვიცნოთ ბავშვებში ფსიქოლოგიური სტრესის ნიშნები</h5></a>
+            <p class="card-text" data-i18n-html="related.e.stresi-bavshvebshi">ბავშვები სხვადასხვანაირად რეაგირებენ მათ ირგვლივ არსებულ უარყოფით მოვლენებზე ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="sensoruli.html"><img src="../assets/img/SENSOR.jpg" class="card-img-top" alt="სენსორული სირთულეები"></a>
+          <a href="sensoruli.html"><img src="../assets/img/SENSOR.jpg" class="card-img-top" alt="სენსორული სირთულეები" data-i18n-attr="alt:related.t.sensoruli"></a>
           <div class="card-body">
-            <a href="sensoruli.html"><h5 class="card-title">რა კონკრეტული ქცევები მიანიშნებენ სენსორულ სირთულეებზე</h5></a>
-            <p class="card-text">სენსორული გადამუშავების დარღვევა არის პროცესი, რომლის დროსაც არ ხდება სხეულიდან და გარემოდან ...</p>
+            <a href="sensoruli.html"><h5 class="card-title" data-i18n="related.t.sensoruli">რა კონკრეტული ქცევები მიანიშნებენ სენსორულ სირთულეებზე</h5></a>
+            <p class="card-text" data-i18n-html="related.e.sensoruli">სენსორული გადამუშავების დარღვევა არის პროცესი, რომლის დროსაც არ ხდება სხეულიდან და გარემოდან ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="bavshvis-ganvitareba.html"><img src="../assets/img/img3.jpg" class="card-img-top" alt="ბავშვის განვითარება"></a>
+          <a href="bavshvis-ganvitareba.html"><img src="../assets/img/img3.jpg" class="card-img-top" alt="ბავშვის განვითარება" data-i18n-attr="alt:related.t.bavshvis-ganvitareba"></a>
           <div class="card-body">
-            <a href="bavshvis-ganvitareba.html"><h5 class="card-title">ბავშვის განვითარება</h5></a>
-            <p class="card-text">ფიზიკური აქტივობა ეხმარება ბავშვს კუნთების გაძლიერებაში, რაც ისეთი უნარების განვითარებისთვის სჭირდება ...</p>
+            <a href="bavshvis-ganvitareba.html"><h5 class="card-title" data-i18n="related.t.bavshvis-ganvitareba">ბავშვის განვითარება</h5></a>
+            <p class="card-text" data-i18n-html="related.e.bavshvis-ganvitareba">ფიზიკური აქტივობა ეხმარება ბავშვს კუნთების გაძლიერებაში, რაც ისეთი უნარების განვითარებისთვის სჭირდება ...</p>
           </div>
         </div>
       </div>
@@ -173,7 +198,7 @@
     <div class="container-fluid pt-4 m-0 p-0 pt-5" style="display:none;">
       <div class="row mb-3">
         <div class="col-md-8 col-xl-6 text-start mx-auto">
-          <h3 class="text-center" style="color: rgb(109,192,174);">ჩვენი პროფესიონალი გუნდი:</h3>
+          <h3 class="text-center" style="color: rgb(109,192,174);" data-i18n="common.team_heading">ჩვენი პროფესიონალი გუნდი:</h3>
         </div>
       </div>
       <div class="row">
@@ -193,7 +218,7 @@
                 <p class="text-center"></p>
             </div>
             <div class="col-md-3 text-center d-none d-lg-inline" style="display: none !important;">
-                <h5 style="color: rgb(109,192,174);">მედია</h5>
+                <h5 style="color: rgb(109,192,174);" data-i18n="footer.media">მედია</h5>
                 <ul class="list-unstyled" style="line-height:30px;">
                     <li><a href="https://www.facebook.com/BrightAcademy.ge" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="margin-right: 4px;">
                                 <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor"></path>
@@ -218,7 +243,7 @@
                 </ul>
             </div>
             <div class="col-md-4 col-lg-2" style="display: none;">
-                <h5 style="color: rgb(109,192,174);">გვერდები</h5>
+                <h5 style="color: rgb(109,192,174);" data-i18n="footer.pages">გვერდები</h5>
                 <ul class="list-unstyled" style="line-height:30px;">
                     <li><a href="../.html">მთავარი</a></li>
                     <li><a href="../.html">სერვისები</a></li>
@@ -244,7 +269,7 @@
                 }
             </style>
             <div class="col-md-9 contactDiv">
-                <h5 style="color: rgb(109,192,174);">კონტაქტი</h5>
+                <h5 style="color: rgb(109,192,174);" data-i18n="footer.contact">კონტაქტი</h5>
                 <ul class="list-unstyled" style="line-height:35px;">
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                             <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
@@ -253,14 +278,14 @@
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                             <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                             <path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"></path>
-                        </svg>&nbsp; 09:00 - 19:00</li>
+                        </svg>&nbsp; <span data-i18n="footer.hours">09:00 - 19:00</span></li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                             <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                             <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-                        </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
+                        </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank" data-i18n="footer.addr.saburtalo">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                             <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
+                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank" data-i18n="footer.addr.dighomi">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
                 </ul>
 
                 <div>
@@ -297,10 +322,10 @@
                 <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"></path>
             </svg></a></div>
     <div class="container text-white py-4 py-lg-5">
-        <p class="mb-0" style="color:#fff; display:none;"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
+        <p class="mb-0" style="color:#fff; display:none;" data-i18n-html="footer.brand"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
     </div>
     <div class="container text-center pb-3">
-        <p class="mb-0" style="font-size: 12px; color: #888;">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
+        <p class="mb-0" style="font-size: 12px; color: #888;" data-i18n-html="footer.credit">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
     </div>
 </footer>
 <!-- End: Footer Dark -->
@@ -309,7 +334,7 @@
   <script src="https://brightacademy.ge/assets/js/bs-init.js?h=67ee20cf4e5150919853fca3720bbf0d"></script>
 
 <a href="https://wa.me/+995597104028" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" class="whatsapp-icon">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" data-i18n-attr="alt:common.whatsapp_alt" class="whatsapp-icon">
 </a>
 </body>
 

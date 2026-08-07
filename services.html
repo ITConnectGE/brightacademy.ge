@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="ka">
 
 <head>
     <meta charset="utf-8">
@@ -28,12 +28,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/styles.css?h=200e48989e36d3832116aa0051e58012">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
+  <link rel="stylesheet" href="assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
+  <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
+  <link rel="stylesheet" href="assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
+  <link rel="stylesheet" href="assets/css/styles.css?h=df5d856d8be600000affa9b112cd3c87">
+  <link rel="stylesheet" href="assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
+  <link rel="stylesheet" href="assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
   <style>
 .whatsapp-float {
   position: fixed;
@@ -102,6 +102,22 @@
   text-align: center;
 }
 </style>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('ba-lang') !== 'en') return;
+        document.documentElement.className += ' i18n-pending';
+        var s = document.createElement('style');
+        s.id = 'i18n-fouc';
+        s.textContent = 'body{visibility:hidden}';
+        document.head.appendChild(s);
+        setTimeout(function () { if (s.parentNode) s.parentNode.removeChild(s); }, 2000);
+      } catch (e) {}
+    })();
+  </script>
+  <script src="assets/i18n/en/common.js"></script>
+  <script src="assets/i18n/en/services.js"></script>
+  <script src="assets/js/i18n.js" defer></script>
 </head>
 
 <body>
@@ -118,11 +134,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navcol-2">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="index.html">მთავარი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="brighacademy.html">ჩვენს შესახებ</a></li>
-                <li class="nav-item"><a class="nav-link active" data-bss-hover-animate="pulse" href="services.html">სერვისები</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="blog.html">ბლოგი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="contact.html">კონტაქტი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="index.html" data-i18n="nav.home">მთავარი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="brighacademy.html" data-i18n="nav.about">ჩვენს შესახებ</a></li>
+                <li class="nav-item"><a class="nav-link active" data-bss-hover-animate="pulse" href="services.html" data-i18n="nav.services">სერვისები</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="blog.html" data-i18n="nav.blog">ბლოგი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="contact.html" data-i18n="nav.contact">კონტაქტი</a></li>
+                <li class="nav-item lang-switch">
+                    <div class="lang-dropdown">
+                        <button class="lang-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><svg class="lang-globe" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"></path></svg><span class="lang-current">ქართული</span><svg class="lang-caret" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 9l6 6 6-6"></path></svg></button>
+                        <ul class="lang-menu" role="listbox">
+                            <li><button class="lang-option" type="button" role="option" data-lang="ka"><span>ქართული</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                            <li><button class="lang-option" type="button" role="option" data-lang="en"><span>English</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                        </ul>
+                    </div>
+                </li>
                 
             </ul>
         </div>
@@ -131,45 +156,45 @@
 <!-- End: Navbar Right Links -->
   <section id="servicesN1" class="container" style="margin-bottom: 100px; padding-top: 30px;">
 
-    <h3 class="page-title">ჩვენი სერვისები</h3>
+    <h3 class="page-title" data-i18n="services.page_title">ჩვენი სერვისები</h3>
 
     <div class="service-section" id="bavshvisGanvitareba">
       <a href="#bavshvisGanvitareba" style="text-decoration:none;">
-        <h5><strong><span style="color: rgb(92, 165, 149);"><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="28px" style="margin-right:12px;">ბავშვის განვითარების შეფასება</span></strong></h5>
+        <h5><strong><span style="color: rgb(92, 165, 149);"><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="28px" style="margin-right:12px;"><span data-i18n="services.t1">ბავშვის განვითარების შეფასება</span></span></strong></h5>
       </a>
-      <b>ნეიროფსიქოლოგიური შეფასება ტარდება, როდესაც</b>
+      <b data-i18n-html="services.b1">ნეიროფსიქოლოგიური შეფასება ტარდება, როდესაც</b>
       <ul style="list-style-type:square">
-        <li>მშობელს სურს შეაფასოს ბავშვის განვითარება მისი ასაკთან შესაბამისობის გადამოწმების მიზნით</li>
-        <li>მშობელს აქვს ეჭვი, რომ ბავშვი მის ასაკთან და თანატოლებთან შედარებით, ნაკლებად ახერხებს ლაპარაკს, კომუნიკაციას, თამაშს, ინსტრუქციებზე რეაგირებას, კონცენტრაციას, აკადემიურ აქტივობას: კითხვას, წერას, თხრობას, ანგარიშს. </li>
-        <li>სკოლის ასაკის ბავშვი აპროტესტებს მეცადინეობას, სკოლაში სიარულს</li>
-        <li>მშობელს/სპეციალისტს სურს ინტერვენციის/თერაპიის შემდეგ განმეორებით შეამოწმოს ბავშვის პროგრესი, მიმდინარე საჭიროებები</li>
+        <li data-i18n-html="services.li1">მშობელს სურს შეაფასოს ბავშვის განვითარება მისი ასაკთან შესაბამისობის გადამოწმების მიზნით</li>
+        <li data-i18n-html="services.li2">მშობელს აქვს ეჭვი, რომ ბავშვი მის ასაკთან და თანატოლებთან შედარებით, ნაკლებად ახერხებს ლაპარაკს, კომუნიკაციას, თამაშს, ინსტრუქციებზე რეაგირებას, კონცენტრაციას, აკადემიურ აქტივობას: კითხვას, წერას, თხრობას, ანგარიშს. </li>
+        <li data-i18n-html="services.li3">სკოლის ასაკის ბავშვი აპროტესტებს მეცადინეობას, სკოლაში სიარულს</li>
+        <li data-i18n-html="services.li4">მშობელს/სპეციალისტს სურს ინტერვენციის/თერაპიის შემდეგ განმეორებით შეამოწმოს ბავშვის პროგრესი, მიმდინარე საჭიროებები</li>
       </ul>
-      <b>რა უნარები ფასდება ნეიროფსიქოლოგიური ტესტირების დროს?</b>
+      <b data-i18n-html="services.b2">რა უნარები ფასდება ნეიროფსიქოლოგიური ტესტირების დროს?</b>
       <ul style="list-style-type:square">
-        <li>42 თვემდე ასაკის ბავშვების შემთხვევაში ინსტრუმენტი აფასებს ბავშვის განვითრებას შემდეგ 5 სკალაზე: მსხვილი მოტორიკა, ნატიფი მოტორიკა, რეცეპტული და ექსპრესიული ენა, კოგნიტური უნარები, სოციალურ-ემოციური და ადაპტური ქცევა.</li>
-        <li>4 წლის ასაკიდან ფასდება ბავშვის ზოგადი კოგნიტური ფუნქციონირება, როგორიცაა, ინფორმაციის გადამუშავება, დასწავლა, აზროვნება, დაგეგმვა, მეხსიერება, ყურადღება, ნატიფი მოტორიკა, მხედველობით-მოტორული უნარები, კითხვა, წაკითხულის გააზრება, თხრობა და ა.შ.</li>
+        <li data-i18n-html="services.li5">42 თვემდე ასაკის ბავშვების შემთხვევაში ინსტრუმენტი აფასებს ბავშვის განვითრებას შემდეგ 5 სკალაზე: მსხვილი მოტორიკა, ნატიფი მოტორიკა, რეცეპტული და ექსპრესიული ენა, კოგნიტური უნარები, სოციალურ-ემოციური და ადაპტური ქცევა.</li>
+        <li data-i18n-html="services.li6">4 წლის ასაკიდან ფასდება ბავშვის ზოგადი კოგნიტური ფუნქციონირება, როგორიცაა, ინფორმაციის გადამუშავება, დასწავლა, აზროვნება, დაგეგმვა, მეხსიერება, ყურადღება, ნატიფი მოტორიკა, მხედველობით-მოტორული უნარები, კითხვა, წაკითხულის გააზრება, თხრობა და ა.შ.</li>
       </ul>
 
 
 
-      <b>რა ასაკიდან ტარდება?</b>
+      <b data-i18n-html="services.b3">რა ასაკიდან ტარდება?</b>
       <ul>
-        <li>შეფასების ინსტრუმენტები იძლევა საშუალებას შეფასდნენ ბავშვები და მოზარდები 1 თვიდან 18 წლამდე.</li>
+        <li data-i18n-html="services.li7">შეფასების ინსტრუმენტები იძლევა საშუალებას შეფასდნენ ბავშვები და მოზარდები 1 თვიდან 18 წლამდე.</li>
       </ul>
-      <b>როგორია შეფასების პროცესი?<br>
+      <b data-i18n-html="services.b4">როგორია შეფასების პროცესი?<br>
         შეფასების პროცესი შედგება რამდენიმე ეტაპისაგან:</b>
       <ul style="list-style-type:numbers">
-        <li>მშობლის სატელეფონო ინტერვიუ ბავშვის განვითრებისა და საჭიროებების შესახებ</li>
-        <li>ტესტირება - შეფასების ინსტრუმენტი აირჩევა ბავშვის ასაკის შესაბამისად. სკოლამდელი ასაკის ბავშვებს სპეციალისტი სთავაზობს სხვადასხვა თამაშის ტიპის აქტივობას და აკვირდება, თუ როგორ ახერხებს ბავშვი მათ შესრულებას. სკოლის ასაკის შემთხვევაში, აქტივობები არის სამაგიდე, თუმცა საინტერესო და სახალისო ფორმატის.</li>
-        <li>დასკვნის გაცემა, მშობლების კონსულტირება. სპეციალისტი ხვდება ოჯახის წევრებს, წერილობით და ზეპირად უზიარებს შეფასების შედეგებს, გამოვლენილ საჭიროებებს, ინტერვენციის შესაძლო გზებს.</li>
+        <li data-i18n-html="services.li8">მშობლის სატელეფონო ინტერვიუ ბავშვის განვითრებისა და საჭიროებების შესახებ</li>
+        <li data-i18n-html="services.li9">ტესტირება - შეფასების ინსტრუმენტი აირჩევა ბავშვის ასაკის შესაბამისად. სკოლამდელი ასაკის ბავშვებს სპეციალისტი სთავაზობს სხვადასხვა თამაშის ტიპის აქტივობას და აკვირდება, თუ როგორ ახერხებს ბავშვი მათ შესრულებას. სკოლის ასაკის შემთხვევაში, აქტივობები არის სამაგიდე, თუმცა საინტერესო და სახალისო ფორმატის.</li>
+        <li data-i18n-html="services.li10">დასკვნის გაცემა, მშობლების კონსულტირება. სპეციალისტი ხვდება ოჯახის წევრებს, წერილობით და ზეპირად უზიარებს შეფასების შედეგებს, გამოვლენილ საჭიროებებს, ინტერვენციის შესაძლო გზებს.</li>
 
-        <b>ესწრება თუ არა მშობელი შეფასების პროცესს?</b>
-        სკოლამდელი ასაკის ბავშვების შეფასებას ესწრება ოჯახის წევრი/მზრუნველი. სკოლის ასაკის ბავშვები თავად ირჩევენ, საკუთარი სურვილის მიხედვით, თუმცა შფოთვის შესამცირებლად, სასურველია ტესტირება ჩატარდებს ბავშვთან პირისპირ.
+        <b data-i18n-html="services.b5">ესწრება თუ არა მშობელი შეფასების პროცესს?</b>
+        <span data-i18n-html="services.p2">სკოლამდელი ასაკის ბავშვების შეფასებას ესწრება ოჯახის წევრი/მზრუნველი. სკოლის ასაკის ბავშვები თავად ირჩევენ, საკუთარი სურვილის მიხედვით, თუმცა შფოთვის შესამცირებლად, სასურველია ტესტირება ჩატარდებს ბავშვთან პირისპირ.</span>
       </ul>
-      <b>რამდენ ხანს გრძელდება შეფასება?</b>
+      <b data-i18n-html="services.b6">რამდენ ხანს გრძელდება შეფასება?</b>
       <ul style="list-style-type:square">
-        <li>შეფასების ხანგრძლივობა დამოკიდებულია ბავშვის ასაკსა და ქცევის თავისებურებაზე. პროცესი საშუალოდ გრძელდება 1 საათიდან 3 საათამდე.</li>
-        <li>საჭიროების შემთხვევაში, შეფასება შესაძლოა გადანაწილდეს რამდენიმე დღეზე.</li>
+        <li data-i18n-html="services.li11">შეფასების ხანგრძლივობა დამოკიდებულია ბავშვის ასაკსა და ქცევის თავისებურებაზე. პროცესი საშუალოდ გრძელდება 1 საათიდან 3 საათამდე.</li>
+        <li data-i18n-html="services.li12">საჭიროების შემთხვევაში, შეფასება შესაძლოა გადანაწილდეს რამდენიმე დღეზე.</li>
       </ul>
     </div>
 
@@ -180,28 +205,28 @@
 
     <div class="service-section" id="autizmisSpeqtri">
       <a href="#autizmisSpeqtri" style="text-decoration:none;">
-        <h5><strong><span style="color: rgb(92, 165, 149);"><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="28px" style="margin-right:12px;">აუტიზმის სპექტრის დიაგნოსტიკა</span></strong></h5>
+        <h5><strong><span style="color: rgb(92, 165, 149);"><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="28px" style="margin-right:12px;"><span data-i18n="services.t2">აუტიზმის სპექტრის დიაგნოსტიკა</span></span></strong></h5>
       </a>
 
 
-      <b>ADOS-2 ის კვლევა ტარდება იმ შემთხვევაში თუ : </b>
+      <b data-i18n-html="services.b7">ADOS-2 ის კვლევა ტარდება იმ შემთხვევაში თუ : </b>
       <ul style="list-style-type:square">
-        <li>ვარაუდი არსებობს აუტიზმის სპექტრის აშლილობაზე</li>
-        <li>დადასტურებულია აუტიზმის სპექტრის აშლილობა, თუმცა სპეციალისტს ან მშობელს სურს თვისობრივი შედარება ადრე ჩატარებულ კვლევასთან</li>
+        <li data-i18n-html="services.li13">ვარაუდი არსებობს აუტიზმის სპექტრის აშლილობაზე</li>
+        <li data-i18n-html="services.li14">დადასტურებულია აუტიზმის სპექტრის აშლილობა, თუმცა სპეციალისტს ან მშობელს სურს თვისობრივი შედარება ადრე ჩატარებულ კვლევასთან</li>
       </ul>
 
 
-      <b>რა ასაკიდან ტარდება?</b>
+      <b data-i18n-html="services.b8">რა ასაკიდან ტარდება?</b>
       <ul style="list-style-type:square">
-        <li>ADOS-2 აქვს 5 მოდული, რომელიც ირჩევა ბავშვის ან ზრდასრულის ასაკისა და შესაძლებლობების მიხედვით</li>
-        <li>მინიმალურ ასაკს წარმოადგენს 12 თვე. </li>
+        <li data-i18n-html="services.li15">ADOS-2 აქვს 5 მოდული, რომელიც ირჩევა ბავშვის ან ზრდასრულის ასაკისა და შესაძლებლობების მიხედვით</li>
+        <li data-i18n-html="services.li16">მინიმალურ ასაკს წარმოადგენს 12 თვე. </li>
       </ul>
 
 
 
-      <b>როგორია ADOS-2 ით შეფასების პროცესი? </b>
+      <b data-i18n-html="services.b9">როგორია ADOS-2 ით შეფასების პროცესი? </b>
       <ul>
-        <li>კვლევის პროცესში ხდება ბავშვის თავისუფალ თამაშზე დაკვირვება, შესაბამისად გარემო არის კეთილგანწყობილი და მხარდამჭერი. მთავარ ფოკუსს წარმოადგენს ბავშვის მკვლევართან და მშობელთან კომუნიკაციასა და ინტერაქციაზე დაკვირვება და ინფორმაციის შეგროვება. შეფასების პროცესს ესწრება მშობელი, ან აღმზრდელი.</li>
+        <li data-i18n-html="services.li17">კვლევის პროცესში ხდება ბავშვის თავისუფალ თამაშზე დაკვირვება, შესაბამისად გარემო არის კეთილგანწყობილი და მხარდამჭერი. მთავარ ფოკუსს წარმოადგენს ბავშვის მკვლევართან და მშობელთან კომუნიკაციასა და ინტერაქციაზე დაკვირვება და ინფორმაციის შეგროვება. შეფასების პროცესს ესწრება მშობელი, ან აღმზრდელი.</li>
       </ul>
     </div>
 
@@ -211,21 +236,21 @@
     <hr class="service-divider">
 
     <div class="service-section">
-      <h5><strong><span style="color: rgb(92, 165, 149);"><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="28px" style="margin-right:12px;">ოკუპაციური თერაპევტის შეფასება</span></strong></h5>
+      <h5><strong><span style="color: rgb(92, 165, 149);"><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="28px" style="margin-right:12px;"><span data-i18n="services.t3">ოკუპაციური თერაპევტის შეფასება</span></span></strong></h5>
 
-      <b>სენსორული ინტეგრაციის შეფასება ტარდება იმ შემთხვევაში თუ:: </b>
+      <b data-i18n-html="services.b10">სენსორული ინტეგრაციის შეფასება ტარდება იმ შემთხვევაში თუ:: </b>
       <ul style="list-style-type:square">
-        <li>ბავშვი ავლენს შეგრძნებების (ვიზუალური, აუდიალური, ტაქტილური, ვესტიბულური, პროპრიოცეპტული, გემო და ყნოსვა) მიმართ ამრიდებლურ ან მაძიებელ ქცევას, რაც გარკვეულ გავლენას ახდენს მის ქცევაზე, ფუნქციონირების ხარისხზე ან/და აქტივობებში ჩართულობაზე.
+        <li data-i18n-html="services.li18">ბავშვი ავლენს შეგრძნებების (ვიზუალური, აუდიალური, ტაქტილური, ვესტიბულური, პროპრიოცეპტული, გემო და ყნოსვა) მიმართ ამრიდებლურ ან მაძიებელ ქცევას, რაც გარკვეულ გავლენას ახდენს მის ქცევაზე, ფუნქციონირების ხარისხზე ან/და აქტივობებში ჩართულობაზე.
           რა ასაკიდან ტარდება?</li>
-        <li>მშობლის მიერ ხდება ბავშვის ასაკის შესაბამისი სენსორული პროფილის კითხვარის შევსება, რომელიც არის 6 თვიდან 17 წლამდე ასაკზე (ასაკობრივი სენსო-მოტორული უნარების გათვალისწინებით).</li>
-        <li>ასევე, სენსორული პროფილის კითხვარი შესაძლებელია შევსებულ იქნას თავად მოზარდისა (13 წლიდან 17 წლამდე) და სკოლის მასწავლებლის მიერ, სკოლაში არსებული სენსო-მოტორული სირთულეების არსებობის შემთხვევაში.</li>
+        <li data-i18n-html="services.li19">მშობლის მიერ ხდება ბავშვის ასაკის შესაბამისი სენსორული პროფილის კითხვარის შევსება, რომელიც არის 6 თვიდან 17 წლამდე ასაკზე (ასაკობრივი სენსო-მოტორული უნარების გათვალისწინებით).</li>
+        <li data-i18n-html="services.li20">ასევე, სენსორული პროფილის კითხვარი შესაძლებელია შევსებულ იქნას თავად მოზარდისა (13 წლიდან 17 წლამდე) და სკოლის მასწავლებლის მიერ, სკოლაში არსებული სენსო-მოტორული სირთულეების არსებობის შემთხვევაში.</li>
       </ul>
 
 
-      <b>როგორია სენსორული ინტეგრაციის შეფასების პროცესი?</b>
+      <b data-i18n-html="services.b11">როგორია სენსორული ინტეგრაციის შეფასების პროცესი?</b>
       <ul style="list-style-type:square">
-        <li>კვლევის პროცესი მიმდინარეობას სპეციფიურად აღჭურვილ გარემოში, სადაც ხდება სხვადასხვა სენსორული სტიმულების (ტაქტილური/შეხებითი, ვესტიბულური/წონასწორობითი, პროპრიოცეპტული/სხეულის აღქმითი, ვიზუალური/მხედველობითი და აუდიალიური/სმენითი) ბავშვისთვის მიწოდება და მის მიერ რეაგირებაზე (ადაპტურ პასუხზე) დაკვირვება.</li>
-        <li>სხვადასხვა სენსორული სტიმულების შემცველობის მქონე აქტივობების შეთავაზება მიმდინარეობს თამაშის სახით.</li>
+        <li data-i18n-html="services.li21">კვლევის პროცესი მიმდინარეობას სპეციფიურად აღჭურვილ გარემოში, სადაც ხდება სხვადასხვა სენსორული სტიმულების (ტაქტილური/შეხებითი, ვესტიბულური/წონასწორობითი, პროპრიოცეპტული/სხეულის აღქმითი, ვიზუალური/მხედველობითი და აუდიალიური/სმენითი) ბავშვისთვის მიწოდება და მის მიერ რეაგირებაზე (ადაპტურ პასუხზე) დაკვირვება.</li>
+        <li data-i18n-html="services.li22">სხვადასხვა სენსორული სტიმულების შემცველობის მქონე აქტივობების შეთავაზება მიმდინარეობს თამაშის სახით.</li>
       </ul>
 
 
@@ -237,19 +262,19 @@
     <hr class="service-divider">
 
     <div class="service-section">
-      <h5><strong><span style="color: rgb(92, 165, 149);"><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="28px" style="margin-right:12px;">განვითარების მასტიმულირებელი ინდივიდუალური პროგრამა</span></strong></h5>
+      <h5><strong><span style="color: rgb(92, 165, 149);"><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="28px" style="margin-right:12px;"><span data-i18n="services.t4">განვითარების მასტიმულირებელი ინდივიდუალური პროგრამა</span></span></strong></h5>
 
 
-      ბრაით აკადემი გთავაზობთ განვითარების მასტიმულირებელ ინდივიდუალურ პაკეტებს, რომელიც განისაზღვრება ბავშვის ასაკისა და გამოვლენილი საჭიროებების შესაბამისად.
+      <span data-i18n-html="services.p4">ბრაით აკადემი გთავაზობთ განვითარების მასტიმულირებელ ინდივიდუალურ პაკეტებს, რომელიც განისაზღვრება ბავშვის ასაკისა და გამოვლენილი საჭიროებების შესაბამისად.</span>
       <br><br>
-      განვითარების მასტიმულირებელი ინტენსიური პროგრამა მოიცავს კვირაში 5 დღე თერაპიულ სესიებს, რომელთა მინიმუმ 40% ტარდება ბავშვის ბუნებრივ გარემოში- სახლი, ბაღი, სკოლა და სხვა. პაკეტი მოიცავს 40 კონტაქტურ თერაპიულ სესიას, სადაც შედის როგორც სტრუქტურირებული, ისე თავისუფალი თამაში, ფიზიკური და სენსორული აქტივობები, ჯგუფური შეხვედრა და ა.შ.
-      განვითარების მასტიმულირებელი სტანდარტული პროგრამა მოიცავს კვირაში 3 დღე თერაპიულ სესიებს, რომელთა მინიმუმ 20% ტარდება ბავშვის ბუნებრივ გარემოში. პაკეტი მოიცავს ჯამში 28 კონტაქტურ თერაპიულ სესიას, სადაც შედის როგორც სტრუქტურირებული, ისე თავისუფალი თამაში, ინდივიდუალური თუ ჯგუფური შეხვედრები, ფიზიკური და სენსორული აქტივობები
-      განვითარების მასტიმულირებელი სტანდარტული პროგრამა მოიცავს კვირაში 2 დღე თერაპიულ სესიებს. პაკეტი მოიცავს 16 კონტაქტურ თერაპიულ სესიას, რომელიც ფოკუსირებულია ბავშვის წამყვან გამოწვევებზე და უმეტესად ინდივიდუალური თერაპიის სახე აქვს.
+      <span data-i18n-html="services.p5">განვითარების მასტიმულირებელი ინტენსიური პროგრამა მოიცავს კვირაში 5 დღე თერაპიულ სესიებს, რომელთა მინიმუმ 40% ტარდება ბავშვის ბუნებრივ გარემოში- სახლი, ბაღი, სკოლა და სხვა. პაკეტი მოიცავს 40 კონტაქტურ თერაპიულ სესიას, სადაც შედის როგორც სტრუქტურირებული, ისე თავისუფალი თამაში, ფიზიკური და სენსორული აქტივობები, ჯგუფური შეხვედრა და ა.შ.</span>
+      <span data-i18n-html="services.p6">განვითარების მასტიმულირებელი სტანდარტული პროგრამა მოიცავს კვირაში 3 დღე თერაპიულ სესიებს, რომელთა მინიმუმ 20% ტარდება ბავშვის ბუნებრივ გარემოში. პაკეტი მოიცავს ჯამში 28 კონტაქტურ თერაპიულ სესიას, სადაც შედის როგორც სტრუქტურირებული, ისე თავისუფალი თამაში, ინდივიდუალური თუ ჯგუფური შეხვედრები, ფიზიკური და სენსორული აქტივობები</span>
+      <span data-i18n-html="services.p7">განვითარების მასტიმულირებელი სტანდარტული პროგრამა მოიცავს კვირაში 2 დღე თერაპიულ სესიებს. პაკეტი მოიცავს 16 კონტაქტურ თერაპიულ სესიას, რომელიც ფოკუსირებულია ბავშვის წამყვან გამოწვევებზე და უმეტესად ინდივიდუალური თერაპიის სახე აქვს.</span>
       <br><br>
-      ასევე პაკეტის ღირებულებაში შედის საჭიროებისამებრ ბავშვის შეფასება სხვადასხვა დარგის სპეციალისტების მიერ: ოკუპაციური თერაპევტის, მეტყველების თერაპევტის, ფსიქოთერაპევტის, ნეიროფსიქოლოგის.
+      <span data-i18n-html="services.p8">ასევე პაკეტის ღირებულებაში შედის საჭიროებისამებრ ბავშვის შეფასება სხვადასხვა დარგის სპეციალისტების მიერ: ოკუპაციური თერაპევტის, მეტყველების თერაპევტის, ფსიქოთერაპევტის, ნეიროფსიქოლოგის.</span>
       <br><br>
-      გარდა ამისა, ჩვენთვის მნიშვნელოვანია პროცესში მშობლების ჩართულობა, რის გამოც გარდა იმ შესაძლებლობისა რომ დაესწრონ თავად თერაპიულ სესიებს და მიიღონ სპეციალისტებისგან პრაქტიკული რჩევები, თვეში ერთხელ აქვთ საშუალება დაესწრონ ჯგუფურ შეხვედრებს, რომელსაც ძირითადად ფსიქოგანათლების სახე აქვს და ემსახურება მშობელთა ინფორმირებულობის დონის გაზრდას და მათ აქტუალურ კითხვებზე კვალიფიციური პასუხების გაცემას.
-      აღსანიშნავია, რომ ნებისმიერი პაკეტით სარგებლობის შემთხვევაში ბავშვი იღებს ყველა საჭირო სპეცილისტის მიერ ერთობლივად დაგეგმილ პროგრამას: ნეიროფსიქოლოგი, ოკუპაციური თერაპევტი, ენისა და მეტყველების თერაპევტოი, ქცევის თერაპევტი, ფსიქოთერაპევტი. გუნდი სისტემატურად ცვლის ერთმანეთში ინფორმაციას, აფასებს სამუშაო გეგმის მიმდინარეობას, განახლების საჭიროებას და ა.შ.
+      <span data-i18n-html="services.p9">გარდა ამისა, ჩვენთვის მნიშვნელოვანია პროცესში მშობლების ჩართულობა, რის გამოც გარდა იმ შესაძლებლობისა რომ დაესწრონ თავად თერაპიულ სესიებს და მიიღონ სპეციალისტებისგან პრაქტიკული რჩევები, თვეში ერთხელ აქვთ საშუალება დაესწრონ ჯგუფურ შეხვედრებს, რომელსაც ძირითადად ფსიქოგანათლების სახე აქვს და ემსახურება მშობელთა ინფორმირებულობის დონის გაზრდას და მათ აქტუალურ კითხვებზე კვალიფიციური პასუხების გაცემას.</span>
+      <span data-i18n-html="services.p10">აღსანიშნავია, რომ ნებისმიერი პაკეტით სარგებლობის შემთხვევაში ბავშვი იღებს ყველა საჭირო სპეცილისტის მიერ ერთობლივად დაგეგმილ პროგრამას: ნეიროფსიქოლოგი, ოკუპაციური თერაპევტი, ენისა და მეტყველების თერაპევტოი, ქცევის თერაპევტი, ფსიქოთერაპევტი. გუნდი სისტემატურად ცვლის ერთმანეთში ინფორმაციას, აფასებს სამუშაო გეგმის მიმდინარეობას, განახლების საჭიროებას და ა.შ.</span>
 
 
     </div>
@@ -272,7 +297,7 @@
                 <p class="text-center"></p>
             </div>
             <div class="col-md-3 text-center d-none d-lg-inline" style="display: none !important;">
-                <h5 style="color: rgb(109,192,174);">მედია</h5>
+                <h5 style="color: rgb(109,192,174);" data-i18n="footer.media">მედია</h5>
                 <ul class="list-unstyled" style="line-height:30px;">
                     <li><a href="https://www.facebook.com/BrightAcademy.ge" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="margin-right: 4px;">
                                 <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor"></path>
@@ -297,7 +322,7 @@
                 </ul>
             </div>
             <div class="col-md-4 col-lg-2" style="display: none;">
-                <h5 style="color: rgb(109,192,174);">გვერდები</h5>
+                <h5 style="color: rgb(109,192,174);" data-i18n="footer.pages">გვერდები</h5>
                 <ul class="list-unstyled" style="line-height:30px;">
                     <li><a href=".html">მთავარი</a></li>
                     <li><a href=".html">სერვისები</a></li>
@@ -323,7 +348,7 @@
                 }
             </style>
             <div class="col-md-9 contactDiv">
-                <h5 style="color: rgb(109,192,174);">კონტაქტი</h5>
+                <h5 style="color: rgb(109,192,174);" data-i18n="footer.contact">კონტაქტი</h5>
                 <ul class="list-unstyled" style="line-height:35px;">
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                             <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
@@ -332,14 +357,14 @@
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                             <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                             <path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"></path>
-                        </svg>&nbsp; 09:00 - 19:00</li>
+                        </svg>&nbsp; <span data-i18n="footer.hours">09:00 - 19:00</span></li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                             <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                             <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-                        </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
+                        </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank" data-i18n="footer.addr.saburtalo">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                             <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
+                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank" data-i18n="footer.addr.dighomi">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
                 </ul>
 
                 <div>
@@ -376,10 +401,10 @@
                 <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"></path>
             </svg></a></div>
     <div class="container text-white py-4 py-lg-5">
-        <p class="mb-0" style="color:#fff; display:none;"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
+        <p class="mb-0" style="color:#fff; display:none;" data-i18n-html="footer.brand"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
     </div>
     <div class="container text-center pb-3">
-        <p class="mb-0" style="font-size: 12px; color: #888;">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
+        <p class="mb-0" style="font-size: 12px; color: #888;" data-i18n-html="footer.credit">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
     </div>
 </footer>
 <!-- End: Footer Dark -->
@@ -388,7 +413,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="https://brightacademy.ge/assets/js/bs-init.js?h=67ee20cf4e5150919853fca3720bbf0d"></script>
   <a href="https://wa.me/+995597104028" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" class="whatsapp-icon">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" data-i18n-attr="alt:common.whatsapp_alt" class="whatsapp-icon">
   </a>
 </body>
 

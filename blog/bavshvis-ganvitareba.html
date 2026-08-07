@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="ka">
 
 <head>
     <meta charset="utf-8">
@@ -32,12 +32,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/styles.css?h=200e48989e36d3832116aa0051e58012">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
+  <link rel="stylesheet" href="../assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
+  <link rel="stylesheet" href="../assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
+  <link rel="stylesheet" href="../assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
+  <link rel="stylesheet" href="../assets/css/styles.css?h=df5d856d8be600000affa9b112cd3c87">
+  <link rel="stylesheet" href="../assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
+  <link rel="stylesheet" href="../assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
 
 <style>
 .whatsapp-float {
@@ -60,6 +60,22 @@
   transform: scale(1.1);
 }
 </style>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('ba-lang') !== 'en') return;
+        document.documentElement.className += ' i18n-pending';
+        var s = document.createElement('style');
+        s.id = 'i18n-fouc';
+        s.textContent = 'body{visibility:hidden}';
+        document.head.appendChild(s);
+        setTimeout(function () { if (s.parentNode) s.parentNode.removeChild(s); }, 2000);
+      } catch (e) {}
+    })();
+  </script>
+  <script src="../assets/i18n/en/common.js"></script>
+  <script src="../assets/i18n/en/blog/bavshvis-ganvitareba.js"></script>
+  <script src="../assets/js/i18n.js" defer></script>
 </head>
 
 <body>
@@ -76,11 +92,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navcol-2">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../index.html">მთავარი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../brighacademy.html">ჩვენს შესახებ</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../services.html">სერვისები</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../blog.html">ბლოგი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../contact.html">კონტაქტი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../index.html" data-i18n="nav.home">მთავარი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../brighacademy.html" data-i18n="nav.about">ჩვენს შესახებ</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../services.html" data-i18n="nav.services">სერვისები</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../blog.html" data-i18n="nav.blog">ბლოგი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../contact.html" data-i18n="nav.contact">კონტაქტი</a></li>
+                <li class="nav-item lang-switch">
+                    <div class="lang-dropdown">
+                        <button class="lang-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><svg class="lang-globe" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"></path></svg><span class="lang-current">ქართული</span><svg class="lang-caret" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 9l6 6 6-6"></path></svg></button>
+                        <ul class="lang-menu" role="listbox">
+                            <li><button class="lang-option" type="button" role="option" data-lang="ka"><span>ქართული</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                            <li><button class="lang-option" type="button" role="option" data-lang="en"><span>English</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                        </ul>
+                    </div>
+                </li>
                 
             </ul>
         </div>
@@ -89,7 +114,7 @@
 <!-- End: Navbar Right Links -->
   <section class="container">
     <div>
-      <h1 style="margin-bottom: 51px;">ბავშვის განვითარება</h1>
+      <h1 style="margin-bottom: 51px;" data-i18n-html="post.head1">ბავშვის განვითარება</h1>
       <div>
         <!-- Start: 1 Row 2 Columns -->
         <div class="container">
@@ -99,54 +124,54 @@
               <h3><a href="#" style="text-decoration:none;"></a></h3>
 
 
-              <b>ფიზიკური განვითარება</b><br>
-              <b>12-18 თვე</b><br>
+              <b data-i18n-html="post.b1">ფიზიკური განვითარება</b><br>
+              <b data-i18n-html="post.b2">12-18 თვე</b><br><span data-i18n-html="post.t1">
               ფიზიკური აქტივობა ეხმარება ბავშვს კუნთების გაძლიერებაში, რაც ისეთი უნარების განვითარებისთვის სჭირდება, როგორიცაა დგომა, სიარული და სირბილი. ბავშვი იწყებს დამოუკიდებლად ან ხელის მოკიდებით სიარულს. შეუძლია აცოცება კიბეზე, მაგრამ ჯერ არ შეუძლია ჩამოსვლა. თუკი აჩვენებთ, როგორ გააკეთოს ეს, შეძლებს ბურთის გადაგდებას და წიგნის გადაფურცვლას, ასევე ფანქრებით ჯღაბნას და კუბებით კოშკის აშენებას. ამ ასაკიდან ბავშვი ცდილობს, დაგეხმაროთ, როდესაც აცმევთ ან ხდით ტანსაცმელს. ცდილობს, დაიჭიროს კოვზი და თვითონ დალიოს წყალი ჭიქიდან.
-              <br><br>
-              <b>წლინახევრიდან ორ წლამდე (18-24თვე)<br></b>
+              </span><br><br>
+              <b data-i18n-html="post.b3">წლინახევრიდან ორ წლამდე (18-24თვე)<br></b><span data-i18n-html="post.t2">
               ბავშვი უკვე დადის დამოუკიდებლად და იწყებს სირბილს. ის ადის და ჩამოდის კიბეზე თქვენი ან მოაჯირის დახმარებით. შეუძლია ატაროს დიდი ზომის ნივთები. გაიხადოს და ჩაიცვას ზოგიერთი სახეობის ტანსაცმელი, დაჯდეს პატარა სკამზე, აიღოს ძალიან პატარა ნივთები.
-              <br><br>
-              <b>ორიდან სამ წლამდე (24-36 თვე)</b> <br>
+              </span><br><br>
+              <b data-i18n-html="post.b4">ორიდან სამ წლამდე (24-36 თვე)</b> <br><span data-i18n-html="post.t3">
               ამ ასაკში თქვენი პატარა ნაკლებად ეცემა, მას მეტად შეუძლია ცალ ფეხზე წონასწორობის შენარჩუნება, რაც ეხმარება კიბეზე დამოუკიდებლად ასვლაში. უკვე შეუძლია უკანსვლით სიარული და სამთვლიანი ველოსიპედის ტარება, უკეთ ისვრის, იჭერს და ფეხს ურტყამს ბურთს, თვითონ ძვრება და ჩამოსრიალდება სასრიალოდან, ადგილზე ხტუნავს და შეუძლია პატარა საფეხურიდან ჩამოხტომა. თქვენი დახმარებით შეუძლია ჩაცმა, თვითონ ახერხებს ფანქრით ხაზების გავლებას, ბოთლის თავსახურის მოხსნას და მოჭერას, ასევე იწყებს მაკრატლით ფურცლის ჩაჭრას, დიდი მძივების თასმაზე აცმას. სიამოვნებით თამაშობს ქვიშასა და წყალში, მოსწონს წიგნების თვალიერება, ბაძავს და ასახიერებს ნაცნობ ცხოველებს.
-              <br><br>
-              <b>სამიდან ექვს წლამდე</b><br>
+              </span><br><br>
+              <b data-i18n-html="post.b5">სამიდან ექვს წლამდე</b><br><span data-i18n-html="post.t4">
               სამიდან ექვს წლამდე ბავშვები მეტად აქტიურები არიან, უყვართ მოძრაობა, ფეხის მონაცვლეობით დამოუკიდებლად ადიან და ჩამოდიან კიბეზე, უფრო დიდხანს შეუძლიათ ცალ ფეხზე დგომა, შემდეგ კი ცალ ფეხზე ხტუნვაც კი. საგრძნობლად უკეთ იჭერენ და ძლიერად ურტყამენ ბურთს, ზოგიერთი ბავშვი შესაძლოა, ამ ასაკში მზად იყოს, ატაროს ორთვლიანი ველოსიპედი. ძალიან უყვართ ძრომიალი, სრიალი და ქანაობა.
               ასევე, სწრაფად ვითარდება ამ ასაკში ბავშვის წვრილი მოტორიკა. ბავშვებს უკეთ უჭირავთ ფანქარი, ავლებენ ხაზებს, ხატავენ ფორმებს, იწყებენ მეტი სიზუსტით გაფერადებას, ხუთი წლიდან შეუძლიათ ზოგიერთი ასოს გამოსახვა, უკეთ ჭრიან მაკრატლით, შეუძლიათ მარტივი ფორმების გამოჭრა. ამ ასაკის ბავშვებს შეუძლიათ, თვითონ ჩაიცვან ტანსაცმელი და შეიკრან ღილები, ასევე, იწყებენ შედარებით რთული შესაკრავების, მაგალითად, ფეხსაცმლის თასმების შეკვრას. უკვე ხუთი წლიდან ბავშვებს უყვართ რთული ფიზიკური მოძრაობების შესრულება და საკუთარი შესაძლებლობების გამოცდა, ამ დროს ხშირად გაიგონებთ მათგან: „ნახე, რა შემიძლია!“, ასევე უყვართ მოძრავი თამაშები, როგორიცაა დაჭერობანა და ა.შ
-              <br><br>
-              <b>მეტყველების განვითარება</b><br>
-              წლიდან - ორ წლამდე (12-24 თვე)<br>
+              </span><br><br>
+              <b data-i18n-html="post.b6">მეტყველების განვითარება</b><br><span data-i18n-html="post.t5">
+              წლიდან - ორ წლამდე (12-24 თვე)</span><br><span data-i18n-html="post.t6">
               ერთი წლის ბავშვი ადეკვატურად რეაგირებს ნაცნობ სიტყვებზე და რეაგირებს დაძახებაზე. ასრულებს მარტივ, ერთი ინსტრუქციის შემცველ დავალებას: აიღე დათუნია, ისროლე ბურთი და ა. შ. ასაკის მატებასთან ერთად სიტყვათა მარაგიც მდიდრდება. წლინახევრის ასაკიდან ბავშვი ამბობს 5-6 სიტყვას, მოგვიანებით 5-20 მარტივ სიტყვას იყენებს, ორი წლისთვის კი უკვე ესმის 50 სიტყვის მნიშვნელობა. იყენებს უარყოფით შესიტყვებებს და შეუძლია ორი სიტყვის დაკავშირება. ინტერესით უსმენს მოყოლილ მოკლე ამბავს.
-              <br><br>
-              <b>ორი წლიდან სამ წლამდე (24 - 36 თვე)</b>
-              <br>
+              </span><br><br>
+              <b data-i18n-html="post.b7">ორი წლიდან სამ წლამდე (24 - 36 თვე)</b>
+              <br><span data-i18n-html="post.t7">
               ორი წლიდან ბავშვი სიტყვიერად პასუხობს მარტივ კითხვებს, ასევე ასრულებს ისეთ ორსაფეხურიან ინსტრუქციას, რომელშიც მოქმედებები არ უკავშირდება ერთმანეთს. მაგალითად, დააბრუნე ფანქრები კოლოფში და მერე მომეხმარე მაგიდის გაშლაში. სხეულის 6 ნაწილზე მაინც მიუთითებს, ასევე მინიმუმ სამ ფერს განასხვავებს. უკვე რამდენიმე ასეული სიტყვის მნიშვნელობა იცის. ბავშვი სიამოვნებით ისმენს მოკლე ზღაპრებს, მოთხრობებს. საკუთარი აზრების გამოსახატავად იყენებს როგორც სიტყვებს, ასევე ჟესტებს.
-              <br><br>
-              <b>3-6 წლამდე </b><br>
+              </span><br><br>
+              <b data-i18n-html="post.b8">3-6 წლამდე </b><br><span data-i18n-html="post.t8">
               სამი წლიდან ბავშვს უკვე შეუძლია მოკლე შეტყობინების გადაცემა, სვამს კითხვებს უცხო სიტყვებთან დაკავშირებით. ბავშვის სიტყვათა მარაგი უფრო და უფრო მდიდრდება და უკვე 1500 - ზე მეტი სიტყვის მნიშვნელობა ესმის. საუბრისას იყენებს მარტივ (მაგ. ამბობს: დათუნიას შია) და მარტივ გავრცობილ წინადადებებს (მაგ. ამბობს: საწყალ დათუნიას ძალიან შია). თხრობისას შეუძლია რამდენიმე წინადადების ერთმანეთთან დაკავშირება, შეუძლია მარტივი ამბის მოყოლა, იმახსოვრებს ლექსებს. შეუძლია მოცემულ ასოზე სიტყვის დასახელება, ასევე ერთნაირი ჟღერადობის სიტყვებს განასხვავებს, მაგ: ატამი - ტატამი. 5-6 წლის ბავშვს თავისუფლად შეუძლია თავისი სიტყვებით მარტივი ამბის გადმოცემა ისე, რომ მოვლენების თანმიმდევრობა დაიცვას, ასევე სხვებს უსმენს და მონაწილეობას იღებს ჯგუფურ საუბარში. იყენებს თავაზიანი მიმართვის ფორმებს, შეუძლია საკუთარ თავზე ინფორმაციის მოწოდება, სიტყვის პირველი ასოს გამოყოფა და ასევე მარცვლების გაერთიანება.
-              <br><br>
+              </span><br><br>
 
-              <b>შემეცნებითი განვითარება</b><br>
-              წლიდან - ორ წლამდე (12-24 თვე)<br>
+              <b data-i18n-html="post.b9">შემეცნებითი განვითარება</b><br><span data-i18n-html="post.t9">
+              წლიდან - ორ წლამდე (12-24 თვე)</span><br><span data-i18n-html="post.t10">
 
               ერთი წლიდან ბავშვი მეტად ცდილობს მიბაძოს ნაცნობი უფროსების მოქმედებებს. მაგალითად, დააძინოს თოჯინა ან „ისაუბროს“ ტელეფონზე, ცდილობს, გადაწმინდოს მაგიდა ტილოთი. ცნობს ნაცნობ საგნებს წიგნში. ვითომ აჭმევს თოჯინას, სათამაშო მანქანის ტარებისას გამოსცემს შესაბამის ხმას. უკვე წლინახევრიდან მოსწონს ჭურჭლის დაცლა და ავსება, ბოთლის დახურვა და გახსნა. იწყებს საგნების დაჯგუფებას რაიმე ნიშნით. მაგალითად, ერთად აწყობს მანქანებს, ერთად კუბურებს. უკეთ იწყებს პრობლემების გადაჭრას. მაგალითად, სულს უბერავს კოვზს, როცა ვეუბნებით, რომ ფაფა ცხელია.
-              ორიდან სამ წლამდე (24-36 თვე)<br>
-              ორი წლიდან პატარა უფრო მეტად ერთვება როლურ თამაშებში, იწყებს წარმოსახვითი საგნების გამოყენებას. მაგალითად, ფეხსაცმელების ყუთი შეიძლება გამოიყენოს როგორც დათუნიას საწოლი. მეტად ვითარდება ბავშვის ფანტაზია, მაგრამ ჯერ კარგად ვერ არჩევს, რა არის რეალობა და რა წარმოსახვა. ბავშვს უკვე ახსოვს, რა მოხდა გუშინ, აჯგუფებს საგნებს უფრო რთულ კატეგორიებში. მაგალითად, ცხოველები, ყვავილები, მანქანები. შეუძლია დაალაგოს ნივთები ზომის მიხედვით - პატარიდან დიდისკენ.<br><br>
+              ორიდან სამ წლამდე (24-36 თვე)</span><br><span data-i18n-html="post.t11">
+              ორი წლიდან პატარა უფრო მეტად ერთვება როლურ თამაშებში, იწყებს წარმოსახვითი საგნების გამოყენებას. მაგალითად, ფეხსაცმელების ყუთი შეიძლება გამოიყენოს როგორც დათუნიას საწოლი. მეტად ვითარდება ბავშვის ფანტაზია, მაგრამ ჯერ კარგად ვერ არჩევს, რა არის რეალობა და რა წარმოსახვა. ბავშვს უკვე ახსოვს, რა მოხდა გუშინ, აჯგუფებს საგნებს უფრო რთულ კატეგორიებში. მაგალითად, ცხოველები, ყვავილები, მანქანები. შეუძლია დაალაგოს ნივთები ზომის მიხედვით - პატარიდან დიდისკენ.</span><br><br>
 
-              <b>3-6 წლამდე</b><br>
-              სამი წლიდან ბავშვი მეტყველების განვითარებასთან ერთად იწყებს მეტი კითხვის დასმას და საკუთარი ვარაუდების გამოთქმას. „რატომ?“ - არის ამ ასაკის მთავარი კითხვა. ბავშვი უფრო მეტად არჩევს წარსულსა და აწმყოს, აქტიურად ეძებს პასუხებს კითხვებზე. შეუძლია ყურადღების შენარჩუნება 5 დან 15 წუთამდე და აქვს ინტერესის გამოკვეთილი სფერო. ამ ასაკის ბავშვი უკეთ ბაძავს უფროსების მოქმედებებს, ითვლის, ადარებს და ახარისხებს. შეუძლია ფერების დასახელება, ხუთი ნივთის გადათვლა, იყენებს ზომისა და ფორმის აღმნიშვნელ სიტყვებს. ატარებს ექსპერიმენტებს, ერთმანეთს ურევს წყალს, სოდას, ძმარს, მარილს. აკვირდება მექანიკას და ცდილობს ახსნას, როგორ მოძრაობს საათი ან სათამაშო. შეუძლია სახლში არსებული მარტივი ტექნოლოგიების გამოყენება, მაგალითად, შეუძლია ჩართოს და გამორთოს ტელევიზორი, პლანშეტი და ა. შ. ბავშვი უკვე კარგად თამაშობს თავის მოგონილ წარმოსახვით თამაშებს, განასახიერებს სხვადასხვა როლს, სიამოვნებს ხატვა, ძერწვა, მოსწონს კონსტრუირება, გამოსახავს ფორმებსა და ადამიანებს, აღწერს საკუთარ ნამუშევრებს, სიამოვნებით ცეკვავს და ყვება ნაცნობ მელოდიებს, შეუძლია შეთხზას ამბები და სიმღერები. სიამოვნებით ათვალიერებს სხვადასხვა თემაზე შექმნილ წიგნებს, ყვება მათზე, აქვს საყვარელი, გამორჩეული წიგნები და პერსონაჟები.<br><br>
+              <b data-i18n-html="post.b10">3-6 წლამდე</b><br><span data-i18n-html="post.t12">
+              სამი წლიდან ბავშვი მეტყველების განვითარებასთან ერთად იწყებს მეტი კითხვის დასმას და საკუთარი ვარაუდების გამოთქმას. „რატომ?“ - არის ამ ასაკის მთავარი კითხვა. ბავშვი უფრო მეტად არჩევს წარსულსა და აწმყოს, აქტიურად ეძებს პასუხებს კითხვებზე. შეუძლია ყურადღების შენარჩუნება 5 დან 15 წუთამდე და აქვს ინტერესის გამოკვეთილი სფერო. ამ ასაკის ბავშვი უკეთ ბაძავს უფროსების მოქმედებებს, ითვლის, ადარებს და ახარისხებს. შეუძლია ფერების დასახელება, ხუთი ნივთის გადათვლა, იყენებს ზომისა და ფორმის აღმნიშვნელ სიტყვებს. ატარებს ექსპერიმენტებს, ერთმანეთს ურევს წყალს, სოდას, ძმარს, მარილს. აკვირდება მექანიკას და ცდილობს ახსნას, როგორ მოძრაობს საათი ან სათამაშო. შეუძლია სახლში არსებული მარტივი ტექნოლოგიების გამოყენება, მაგალითად, შეუძლია ჩართოს და გამორთოს ტელევიზორი, პლანშეტი და ა. შ. ბავშვი უკვე კარგად თამაშობს თავის მოგონილ წარმოსახვით თამაშებს, განასახიერებს სხვადასხვა როლს, სიამოვნებს ხატვა, ძერწვა, მოსწონს კონსტრუირება, გამოსახავს ფორმებსა და ადამიანებს, აღწერს საკუთარ ნამუშევრებს, სიამოვნებით ცეკვავს და ყვება ნაცნობ მელოდიებს, შეუძლია შეთხზას ამბები და სიმღერები. სიამოვნებით ათვალიერებს სხვადასხვა თემაზე შექმნილ წიგნებს, ყვება მათზე, აქვს საყვარელი, გამორჩეული წიგნები და პერსონაჟები.</span><br><br>
 
-              <b>სოციალურ-ემოციური განვითარება<br><br></b>
+              <b data-i18n-html="post.b11">სოციალურ-ემოციური განვითარება<br><br></b>
 
-              <b>წლიდან - ორ წლამდე (12-24 თვე)</b><br>
+              <b data-i18n-html="post.b12">წლიდან - ორ წლამდე (12-24 თვე)</b><br><span data-i18n-html="post.t13">
               ერთი წლის ბავშვი უფრო და უფრო მეტ სიამოვნებას ღებულობს ოჯახის წევრებთან ურთიერთობით, კოცნის და ეხუტება ოჯახის წევრებს, ნაცნობ ადამიანებს, საყვარელ ცხოველს. მოსწონს მარტო თამაში - შეუძლია თავი გაირთოს გარკვეული დროის განმავლობაში. ამავე დროს სხვა ბავშვების გარემოცვაში ყოფნაც მოსწონს, გარკვეული ხანი შეუძლია უბრალოდ მათ გვერდით თამაში. ერთი წლიდან ორ წლამდე ასაკის ბავშვი უკვე ცნობს და ეძახის საკუთარ თავს სარკეში. როცა შესაბამის შეკითხვას უსვამენ, შეუძლია საკუთარი სხეულის ნაწილებზე მიუთითოს. ასევე შეკითხვაზე მარტივი „კი“ ან „არა“ პასუხით შეუძლია გამოხატოს თავისი არჩევანი. როცა რამე ახალს აკეთებს უფროსს უყურებს და წარმატების შემთხვევაში იღიმება. ამ ასაკში ბავშვი უკვე აღიქვამს სხვის მიერ გამოხატულ სხვადასხვა ემოციასაც - სიხარულს, წყენას, ბრაზს, ასევე თავად გამოხატავს ემოციებს ნაცნობი ადამიანების მიმართ. თანაგრძნობას გამოხატავს ოჯახის წევრების მიმართ, მაგალითად ეფერება იმას, ვინც ცუდ ხასიათზეა. ნაცნობი უფროსის მხარდაჭერას ითხოვს, როცა ძლიერი ემოციები იპყრობს, ეძებს მას როდესაც ეშინია, ან დამშვიდება სურს. ბავშვს უკვე შეუძლია საკუთარი ქცევის შეცვლა უფროსის თხოვნის შესაბამისად,. ამ ასაკში ბავშვი თამაშის დროს იმეორებს უფროსის მოქმედებებს - დაჰყავს მანქანა, კითხულობს, სადილს ამზადებს. მოსწონს ნაცნობ ადგილებში ყოფნა, უცხო გარემოში როდესაც ნაცნობი უფროსი იქვე ეგულება, თავს უსაფრთხოდ გრძნობს და მშვიდად იკვლევს ახალ ნივთებს და გარემოს.
 
-              <br><br>
-              <b>ორი წლიდან სამ წლამდე (24 - 36 თვე)</b><br>
+              </span><br><br>
+              <b data-i18n-html="post.b13">ორი წლიდან სამ წლამდე (24 - 36 თვე)</b><br><span data-i18n-html="post.t14">
               2 წლის ბავშვი უკვე საკუთარ თავს სახელით მოიხსენიებს, ასევე თავის გვარს ასახელებს, აქვს გამორჩეულად საყვარელი წიგნი, სათამაშო, საქმიანობა, კერძი, ჰყავს გამორჩეული თანატოლები, რომლებთანაც თამაში უყვარს. შეუძლია არჩევანის გაკეთება რა ჩაიცვას, რა ითამაშოს. აღიარებს საკუთარ მიღწევებს და ამასთან დაკავშრებით სიხარულს გამოხატავს. 2 დან 3 წლამდე ასაკში ბავშვი შეხსენების შემთხვევაში მარტივ წესებს იცავს, აგრეთვე ხვდება რა შედეგი შეიძლება მოჰყვეს წესის დარღვევას. იყენებს სიტყვებს „მადლობა“, „თუ შეიძლება“, „ნახვამდის.“ იცის როდის უნდა ითხოვოს დახმარება. ბავშვს შეუძლია რამოდენიმე ემოციის დასახელება, ამბობს მე მიხარია, მეშინია, გაბრაზებული ვარ, მეწყინა, სხვის ემოციებსაც ამჩნევს და ასახელებს. ბავშვი ნაცნობ გარემოში ადვილად ეგუება მშობელთან განშორებას. ამ ასაკში მას სიამოვნებს სხვა ბავშვების გვერდით თამაში, კეთილგანწყობას გამოხატავს ნაცნობი ბავშვების მიმართ, თამაშის დროს უფროსის დახმარებით იცავს რიგს, ან ათხოვებს და გამოართმევს სათამაშოს სხვა ბავშვებს, თუმცა ხანდახან უჭირს გაზიარება, ამბობს „არა, ჩემია“. უფროსებს სათამაშოდ იწვევს, ხშირად არის თამაშის წამომწყები, ინიციატორი. თამაშის დროს წარმოსახვით პერსონაჟებს ქმნის.
-              <br><br>
-              <b>3 წლიდან</b> ბავშვი უკვე თამამად ასახელებს მისთვის საინტერესო საქმიანობებს, თამაშებს. ირჩევს და ერთვება ინდივიდუალურ საქმიანობაში, დამოუკიდებლად ცდის ახალ ქმედებებს, იცის რა გამოსდის კარგად. ბავშვმა უკვე იცის იმ ადგილის სახელი, სადაც ცხოვრობს, აღწერს საკუთარ ოჯახს, ჩამოთვლის ოჯახის წევრებს, აცნობიერებს, რომ ოჯახი გარკვეულ ერთობას წარმოადგენს. თამაშის დროს შეუძლია თანამშრომლობა, ამავე დროს იჩენს ინიციატივას. თავადაც ცდილობს და სხვებისგანაც მოითხოვს წესების დაცვას. აფიქსირებს საკუთარ აზრს რა მოსწონს, რა არ მოსწონს და შეუძლია საკუთარი დამოკიდებულების ახსნა. 3 დან 6 წლამდე ასაკის ბავშვი გაითამაშებს სიუჟეტებს რეალური ცხოვრებიდან, ასევე წარმოსახვით თამაშში ერთვება. თუ ადრე უბრალოდ სხვა ბავშვების გვერდზე თამაშობდა, ახლა მოსწონს თანატოლებთან ერთად თამაში. შეუძლია ეთამაშოს უცნობ თანატოლებსაც. ამ ასაკში ბავშვს შეუძლია საკუთარი ემოციების ამოცნობა და დასახელება, ასევე აღნიშნავს და ასახელებს სხვების ემოციებს. უფროსის დახმარებით კონფლიქტის მოგვარებას ცდილობს. ბავშვი მოქნილობას ამჟღავნებს და საკუთარ ქცევას გარემოს უსადაგებს. შეუძლია საკუთარი ემოციებისა და იმპულსების მართვა, სიამოვნების ან ჯილდოს გადავადება ცოტა ხნით.
+              </span><br><br>
+              <b data-i18n-html="post.b14">3 წლიდან</b><span data-i18n-html="post.t15"> ბავშვი უკვე თამამად ასახელებს მისთვის საინტერესო საქმიანობებს, თამაშებს. ირჩევს და ერთვება ინდივიდუალურ საქმიანობაში, დამოუკიდებლად ცდის ახალ ქმედებებს, იცის რა გამოსდის კარგად. ბავშვმა უკვე იცის იმ ადგილის სახელი, სადაც ცხოვრობს, აღწერს საკუთარ ოჯახს, ჩამოთვლის ოჯახის წევრებს, აცნობიერებს, რომ ოჯახი გარკვეულ ერთობას წარმოადგენს. თამაშის დროს შეუძლია თანამშრომლობა, ამავე დროს იჩენს ინიციატივას. თავადაც ცდილობს და სხვებისგანაც მოითხოვს წესების დაცვას. აფიქსირებს საკუთარ აზრს რა მოსწონს, რა არ მოსწონს და შეუძლია საკუთარი დამოკიდებულების ახსნა. 3 დან 6 წლამდე ასაკის ბავშვი გაითამაშებს სიუჟეტებს რეალური ცხოვრებიდან, ასევე წარმოსახვით თამაშში ერთვება. თუ ადრე უბრალოდ სხვა ბავშვების გვერდზე თამაშობდა, ახლა მოსწონს თანატოლებთან ერთად თამაში. შეუძლია ეთამაშოს უცნობ თანატოლებსაც. ამ ასაკში ბავშვს შეუძლია საკუთარი ემოციების ამოცნობა და დასახელება, ასევე აღნიშნავს და ასახელებს სხვების ემოციებს. უფროსის დახმარებით კონფლიქტის მოგვარებას ცდილობს. ბავშვი მოქნილობას ამჟღავნებს და საკუთარ ქცევას გარემოს უსადაგებს. შეუძლია საკუთარი ემოციებისა და იმპულსების მართვა, სიამოვნების ან ჯილდოს გადავადება ცოტა ხნით.
 
-              <hr>
+              </span><hr>
             </div>
           </div>
         </div><!-- End: 1 Row 2 Columns -->
@@ -166,50 +191,50 @@
     @media(max-width:768px){.related-btn{display:none;}}
   </style>
   <section class="container" style="margin-top: 50px;">
-    <h4 style="margin-bottom:25px;">სხვა ბლოგები:</h4>
+    <h4 style="margin-bottom:25px;" data-i18n="common.more_articles">სხვა ბლოგები:</h4>
     <div class="related-wrap">
       <button class="related-btn related-btn-prev" onclick="this.parentElement.querySelector('.related-carousel').scrollBy({left:-300,behavior:'smooth'})">&#8249;</button>
       <div class="related-carousel">
         <div class="card">
-          <a href="adreuli-intervencia.html"><img src="../assets/img/adreuli-intervencia-cover.jpeg" class="card-img-top" alt="ადრეული ინტერვენცია"></a>
+          <a href="adreuli-intervencia.html"><img src="../assets/img/adreuli-intervencia-cover.jpeg" class="card-img-top" alt="ადრეული ინტერვენცია" data-i18n-attr="alt:related.t.adreuli-intervencia"></a>
           <div class="card-body">
-            <a href="adreuli-intervencia.html"><h5 class="card-title">ბავშვთა განვითარების ადრეული იდენტიფიკაციისა და მხარდაჭერის პროექტი</h5></a>
-            <p class="card-text">აუტიზმის ცნობადობის ამაღლების მსოფლიო დღესთან დაკავშირებით, „ბრაით აკადემი" ახორციელებს სოციალურ პროექტს ...</p>
+            <a href="adreuli-intervencia.html"><h5 class="card-title" data-i18n="related.t.adreuli-intervencia">ბავშვთა განვითარების ადრეული იდენტიფიკაციისა და მხარდაჭერის პროექტი</h5></a>
+            <p class="card-text" data-i18n-html="related.e.adreuli-intervencia">აუტიზმის ცნობადობის ამაღლების მსოფლიო დღესთან დაკავშირებით, „ბრაით აკადემი" ახორციელებს სოციალურ პროექტს ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="michajvuloba.html"><img src="../assets/img/img32.jpg" class="card-img-top" alt="მიჯაჭვულობა"></a>
+          <a href="michajvuloba.html"><img src="../assets/img/img32.jpg" class="card-img-top" alt="მიჯაჭვულობა" data-i18n-attr="alt:related.t.michajvuloba"></a>
           <div class="card-body">
-            <a href="michajvuloba.html"><h5 class="card-title">მიჯაჭვულობა, ბავშვობისა და ზრდასრულობის განვითარების ფუნდამენტი</h5></a>
-            <p class="card-text">მიჯაჭვულობა არის ძლიერი ემოციური კავშირი რომელიც მყარდება ახალშობილსა და მასზე მზრუნველ ადამიანს შორის ...</p>
+            <a href="michajvuloba.html"><h5 class="card-title" data-i18n="related.t.michajvuloba">მიჯაჭვულობა, ბავშვობისა და ზრდასრულობის განვითარების ფუნდამენტი</h5></a>
+            <p class="card-text" data-i18n-html="related.e.michajvuloba">მიჯაჭვულობა არის ძლიერი ემოციური კავშირი რომელიც მყარდება ახალშობილსა და მასზე მზრუნველ ადამიანს შორის ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="winasaskolo-unarebi.html"><img src="../assets/img/winasaskolo-unarebi.jpg" class="card-img-top" alt="წინასასკოლო უნარები"></a>
+          <a href="winasaskolo-unarebi.html"><img src="../assets/img/winasaskolo-unarebi.jpg" class="card-img-top" alt="წინასასკოლო უნარები" data-i18n-attr="alt:related.t.winasaskolo-unarebi"></a>
           <div class="card-body">
-            <a href="winasaskolo-unarebi.html"><h5 class="card-title">წინასასკოლო უნარები</h5></a>
-            <p class="card-text">მშობლებს ხშირად უჩნდებათ კითხვა: "მზად არის თუ არა ჩემი შვილი სკოლისთვის?" ...</p>
+            <a href="winasaskolo-unarebi.html"><h5 class="card-title" data-i18n="related.t.winasaskolo-unarebi">წინასასკოლო უნარები</h5></a>
+            <p class="card-text" data-i18n-html="related.e.winasaskolo-unarebi">მშობლებს ხშირად უჩნდებათ კითხვა: "მზად არის თუ არა ჩემი შვილი სკოლისთვის?" ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="stresi-bavshvebshi.html"><img src="../assets/img/stresibavshvebshi.jpg" class="card-img-top" alt="სტრესი ბავშვებში"></a>
+          <a href="stresi-bavshvebshi.html"><img src="../assets/img/stresibavshvebshi.jpg" class="card-img-top" alt="სტრესი ბავშვებში" data-i18n-attr="alt:related.t.stresi-bavshvebshi"></a>
           <div class="card-body">
-            <a href="stresi-bavshvebshi.html"><h5 class="card-title">როგორ ამოვიცნოთ ბავშვებში ფსიქოლოგიური სტრესის ნიშნები</h5></a>
-            <p class="card-text">ბავშვები სხვადასხვანაირად რეაგირებენ მათ ირგვლივ არსებულ უარყოფით მოვლენებზე ...</p>
+            <a href="stresi-bavshvebshi.html"><h5 class="card-title" data-i18n="related.t.stresi-bavshvebshi">როგორ ამოვიცნოთ ბავშვებში ფსიქოლოგიური სტრესის ნიშნები</h5></a>
+            <p class="card-text" data-i18n-html="related.e.stresi-bavshvebshi">ბავშვები სხვადასხვანაირად რეაგირებენ მათ ირგვლივ არსებულ უარყოფით მოვლენებზე ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="sensoruli.html"><img src="../assets/img/SENSOR.jpg" class="card-img-top" alt="სენსორული სირთულეები"></a>
+          <a href="sensoruli.html"><img src="../assets/img/SENSOR.jpg" class="card-img-top" alt="სენსორული სირთულეები" data-i18n-attr="alt:related.t.sensoruli"></a>
           <div class="card-body">
-            <a href="sensoruli.html"><h5 class="card-title">რა კონკრეტული ქცევები მიანიშნებენ სენსორულ სირთულეებზე</h5></a>
-            <p class="card-text">სენსორული გადამუშავების დარღვევა არის პროცესი, რომლის დროსაც არ ხდება სხეულიდან და გარემოდან ...</p>
+            <a href="sensoruli.html"><h5 class="card-title" data-i18n="related.t.sensoruli">რა კონკრეტული ქცევები მიანიშნებენ სენსორულ სირთულეებზე</h5></a>
+            <p class="card-text" data-i18n-html="related.e.sensoruli">სენსორული გადამუშავების დარღვევა არის პროცესი, რომლის დროსაც არ ხდება სხეულიდან და გარემოდან ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="denveris-modeli.html"><img src="../assets/img/img4.jpg" class="card-img-top" alt="დენვერის მოდელი"></a>
+          <a href="denveris-modeli.html"><img src="../assets/img/img4.jpg" class="card-img-top" alt="დენვერის მოდელი" data-i18n-attr="alt:related.t.denveris-modeli"></a>
           <div class="card-body">
-            <a href="denveris-modeli.html"><h5 class="card-title">დენვერის მოდელი</h5></a>
-            <p class="card-text">ადრეული განვითარების დენვერის მოდელი არის განვითარებაზე, ქცევაზე, რუტინებზე და თამაშზე დაფუძნ...</p>
+            <a href="denveris-modeli.html"><h5 class="card-title" data-i18n="related.t.denveris-modeli">დენვერის მოდელი</h5></a>
+            <p class="card-text" data-i18n-html="related.e.denveris-modeli">ადრეული განვითარების დენვერის მოდელი არის განვითარებაზე, ქცევაზე, რუტინებზე და თამაშზე დაფუძნ...</p>
           </div>
         </div>
       </div>
@@ -221,7 +246,7 @@
     <div class="container-fluid pt-4 m-0 p-0 pt-5" style="display:none;">
       <div class="row mb-3">
         <div class="col-md-8 col-xl-6 text-start mx-auto">
-          <h3 class="text-center" style="color: rgb(109,192,174);">ჩვენი პროფესიონალი გუნდი:</h3>
+          <h3 class="text-center" style="color: rgb(109,192,174);" data-i18n="common.team_heading">ჩვენი პროფესიონალი გუნდი:</h3>
         </div>
       </div>
       <div class="row">
@@ -241,7 +266,7 @@
           <p class="text-center"></p>
         </div>
         <div class="col-md-3 text-center d-none d-lg-inline">
-          <h5 style="color: rgb(109,192,174);">მედია</h5>
+          <h5 style="color: rgb(109,192,174);" data-i18n="footer.media">მედია</h5>
           <ul class="list-unstyled" style="line-height:30px;">
             <li><a href="https://www.facebook.com/BrightAcademy.ge" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="margin-right: 4px;">
                   <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor"></path>
@@ -266,7 +291,7 @@
           </ul>
         </div>
         <div class="col-md-4 col-lg-2">
-          <h5 style="color: rgb(109,192,174);">გვერდები</h5>
+          <h5 style="color: rgb(109,192,174);" data-i18n="footer.pages">გვერდები</h5>
           <ul class="list-unstyled" style="line-height:30px;">
             <li><a href="../index.html">მთავარი</a></li>
             <li><a href="../services.html">სერვისები</a></li>
@@ -277,7 +302,7 @@
           </ul>
         </div>
         <div class="col-md-5 col-lg-4 text-center">
-          <h5 style="color: rgb(109,192,174);">კონტაქტი</h5>
+          <h5 style="color: rgb(109,192,174);" data-i18n="footer.contact">კონტაქტი</h5>
           <ul class="list-unstyled" style="line-height:35px;">
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
@@ -286,14 +311,14 @@
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                 <path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"></path>
-              </svg>&nbsp; 09:00 - 19:00</li>
+              </svg>&nbsp; <span data-i18n="footer.hours">09:00 - 19:00</span></li>
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                 <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-              </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
+              </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank" data-i18n="footer.addr.saburtalo">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                             <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
+                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank" data-i18n="footer.addr.dighomi">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
           </ul>
         </div>
       </div>
@@ -310,10 +335,10 @@
           <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"></path>
         </svg></a></div>
     <div class="container text-white py-4 py-lg-5">
-      <p class="mb-0" style="color:#fff;"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
+      <p class="mb-0" style="color:#fff;" data-i18n-html="footer.brand"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
     </div>
       <div class="container text-center pb-3">
-        <p class="mb-0" style="font-size: 12px; color: #888;">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
+        <p class="mb-0" style="font-size: 12px; color: #888;" data-i18n-html="footer.credit">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
     </div>
 </footer><!-- End: Footer Dark -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -322,7 +347,7 @@
   <script src="../assets/js/slider.js?h=75db9baacc24c65f36dd8b8e3d601eee"></script>
 
 <a href="https://wa.me/+995597104028" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" class="whatsapp-icon">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" data-i18n-attr="alt:common.whatsapp_alt" class="whatsapp-icon">
 </a>
 </body>
 

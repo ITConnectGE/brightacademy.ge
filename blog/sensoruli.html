@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="ka">
 
 <head>
     <meta charset="utf-8">
@@ -32,12 +32,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/styles.css?h=200e48989e36d3832116aa0051e58012">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
+  <link rel="stylesheet" href="../assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
+  <link rel="stylesheet" href="../assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
+  <link rel="stylesheet" href="../assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
+  <link rel="stylesheet" href="../assets/css/styles.css?h=df5d856d8be600000affa9b112cd3c87">
+  <link rel="stylesheet" href="../assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
+  <link rel="stylesheet" href="../assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
 
 <style>
 .whatsapp-float {
@@ -60,6 +60,22 @@
   transform: scale(1.1);
 }
 </style>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('ba-lang') !== 'en') return;
+        document.documentElement.className += ' i18n-pending';
+        var s = document.createElement('style');
+        s.id = 'i18n-fouc';
+        s.textContent = 'body{visibility:hidden}';
+        document.head.appendChild(s);
+        setTimeout(function () { if (s.parentNode) s.parentNode.removeChild(s); }, 2000);
+      } catch (e) {}
+    })();
+  </script>
+  <script src="../assets/i18n/en/common.js"></script>
+  <script src="../assets/i18n/en/blog/sensoruli.js"></script>
+  <script src="../assets/js/i18n.js" defer></script>
 </head>
 
 <body>
@@ -76,11 +92,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navcol-2">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../index.html">მთავარი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../brighacademy.html">ჩვენს შესახებ</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../services.html">სერვისები</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../blog.html">ბლოგი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../contact.html">კონტაქტი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../index.html" data-i18n="nav.home">მთავარი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../brighacademy.html" data-i18n="nav.about">ჩვენს შესახებ</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../services.html" data-i18n="nav.services">სერვისები</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../blog.html" data-i18n="nav.blog">ბლოგი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../contact.html" data-i18n="nav.contact">კონტაქტი</a></li>
+                <li class="nav-item lang-switch">
+                    <div class="lang-dropdown">
+                        <button class="lang-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><svg class="lang-globe" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"></path></svg><span class="lang-current">ქართული</span><svg class="lang-caret" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 9l6 6 6-6"></path></svg></button>
+                        <ul class="lang-menu" role="listbox">
+                            <li><button class="lang-option" type="button" role="option" data-lang="ka"><span>ქართული</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                            <li><button class="lang-option" type="button" role="option" data-lang="en"><span>English</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                        </ul>
+                    </div>
+                </li>
                 
             </ul>
         </div>
@@ -89,131 +114,131 @@
 <!-- End: Navbar Right Links -->
   <section class="container">
     <div>
-      <h1 style="margin-bottom: 51px;">რა კონკრეტული ქცევები მიანიშნებენ სენსორულ სირთულეებზე</h1>
+      <h1 style="margin-bottom: 51px;" data-i18n-html="post.head1">რა კონკრეტული ქცევები მიანიშნებენ სენსორულ სირთულეებზე</h1>
       <div>
         <!-- Start: 1 Row 2 Columns -->
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-lg-3 col-xxl-3" style="margin-bottom: 20px;"><img class="img-fluid" src="../assets/img/SENSOR.jpg?h=0121f6b461548546524" style="border-radius:35px;"></div>
             <div class="col-md-9 col-lg-9 col-xxl-9" style="padding-right: 25px;padding-left: 25px;;">
-              <h3><a href="#" style="text-decoration:none;"></a></h3>
+              <h3><a href="#" style="text-decoration:none;"></a></h3><span data-i18n-html="post.t1">
 
 სენსორული გადამუშავების  დარღევა არის  პროცესი, რომლის დროსაც არ ხდება სხეულიდან და გარემოდან სენსორული იმპულსების ტვინისთვის მიწოდება, შესაბამისად ტვინი ვერ ახდენს სენსორული ინფორმაციის სწორად მიღებასა და გადამუშავებას. ამ დროს ადგილი აქვს სენსორულ შეგრძნებებზე არა სწორ ან შეუსაბამო პასუხს. შესაძლოა ვლინდებოდეს ჭარბად გამოხატული სენსორული ძიება ერთ ან რამდენიმე სისტემაში, რომელიც ხელს უშლის ბავშვს ერთ აქტივობაზე კოცნეტრაციაში და ასევე, შესაძლოა ვლინდებოდეს მკვეთრად გამოხატული თავის არიდება, როდესაც ბავშვს ერთ ან რამდენიმე სისტემაში აღენიშნება ძლიერი სენსიტიურობა, რის გამოც მას უჭირს ყოველდღიურ აქტივობებში ჩართვა.
-<br><br>
+</span><br><br><span data-i18n-html="post.t2">
 სენსორული გადამუშავების  დარღვევა - არის კომპლექსური მექანიზმი, რომელიც აფერხებს სხვადასხვა სისტემებით/არხებით შეგრძნების პროცესს - ყნოსვა, გემო და ა.შ.
 მათ ვისაც აქვთ სენსორული გადამუშავების დარღვევა მათთვის არის სირთულე სხვადსახვა ყოველდღიური ცხოვრებისეული აქტივობების განხორციელება  (სოციალურ-ემოციური რეაგირება, მოტორული აქტივობები,  აკადემიური მიღწევები და ა.შ).
+</span><br>
 <br>
-<br>
-<br>
+<br><span data-i18n-html="post.t3">
 როგორ მივხდეთ არის თუ არა სენსორული გადამუშავების დარღვევა (რა კონკრეტული ქცევები მიანიშნებენ სენსორულ სირთულეებზე)?
-<br></br>
-<b>ტაქტილური მგრძნობელობა:</b>
+</span><br></br>
+<b data-i18n-html="post.b1">ტაქტილური მგრძნობელობა:</b>
 <br>
 <ul style="list-style-type:decimal;">
-  <li>უარს ამბობს შეხებაზე (მოფერება), კოცნაზე და ზედმეტად სენსიტიურად რეაგირებს შემთხვევით შეხებაზე, იწმენდს შეხების ადგილს</li>
-  <li>ბრაზობს, როდესაც ბავშვები მას უახლოვდებიან და ეხებიან, შეიძლება გამოხატოს ფიზიკური აგრესია</li>
-  <li>არ უყვარს რიგში დგომა, განსაკუთრებით თუ ვინმე ეხება</li>
-  <li>არ უყვარს ჩახუტება (ჩვილობაში შესაძლოა არ უყვარდა რწევა) ან პირიქით მუდმივად სურს რომ ხელში იყოს (დაცულობა)</li>
-  <li>აწუხებს პერანგის იარლიყები კისერზე ან მომჯდარი/ ვიწრო ტანსაცმელი, ხელთათმანი, ქუდი, საყელოიანი ზედა ტანისამოსი და ა.შ.</li>
-  <li>გარემოში ყველაფერს ეხება - სხვადასხვა ზედაპირებს, ფაქტურებს, ტექსტურებს</li>
-  <li>გამუდმებით პირში იდებს არასაკვებ საგნებს</li>
-  <li>არ უყვარს ,,დასვრითი“ თამაშები (ქვიშა, ტალახი, საღებავები - თითებით ხატვა და ა.შ.)</li>
-  <li>ჩქმეტს/იკაწრავს ან კბენს საკუთარ თავს, ასევე შესაძლოა სხვებსაც</li>
-  <li>არ უყვარს მოვლითი აქტივობები, მაგ: თმის შეჭრა, ხელ-პირის დაბანა, ფრჩხილების დაჭრა, კბილების გახეხვა, საფენის გამოცვლა და ა.შ.</li>
+  <li data-i18n-html="post.li1">უარს ამბობს შეხებაზე (მოფერება), კოცნაზე და ზედმეტად სენსიტიურად რეაგირებს შემთხვევით შეხებაზე, იწმენდს შეხების ადგილს</li>
+  <li data-i18n-html="post.li2">ბრაზობს, როდესაც ბავშვები მას უახლოვდებიან და ეხებიან, შეიძლება გამოხატოს ფიზიკური აგრესია</li>
+  <li data-i18n-html="post.li3">არ უყვარს რიგში დგომა, განსაკუთრებით თუ ვინმე ეხება</li>
+  <li data-i18n-html="post.li4">არ უყვარს ჩახუტება (ჩვილობაში შესაძლოა არ უყვარდა რწევა) ან პირიქით მუდმივად სურს რომ ხელში იყოს (დაცულობა)</li>
+  <li data-i18n-html="post.li5">აწუხებს პერანგის იარლიყები კისერზე ან მომჯდარი/ ვიწრო ტანსაცმელი, ხელთათმანი, ქუდი, საყელოიანი ზედა ტანისამოსი და ა.შ.</li>
+  <li data-i18n-html="post.li6">გარემოში ყველაფერს ეხება - სხვადასხვა ზედაპირებს, ფაქტურებს, ტექსტურებს</li>
+  <li data-i18n-html="post.li7">გამუდმებით პირში იდებს არასაკვებ საგნებს</li>
+  <li data-i18n-html="post.li8">არ უყვარს ,,დასვრითი“ თამაშები (ქვიშა, ტალახი, საღებავები - თითებით ხატვა და ა.შ.)</li>
+  <li data-i18n-html="post.li9">ჩქმეტს/იკაწრავს ან კბენს საკუთარ თავს, ასევე შესაძლოა სხვებსაც</li>
+  <li data-i18n-html="post.li10">არ უყვარს მოვლითი აქტივობები, მაგ: თმის შეჭრა, ხელ-პირის დაბანა, ფრჩხილების დაჭრა, კბილების გახეხვა, საფენის გამოცვლა და ა.შ.</li>
 </ul>
 
 <br>
 <br>
-<b>პროპრიოცეპტული მგრძნობელობა:</b></br>
+<b data-i18n-html="post.b2">პროპრიოცეპტული მგრძნობელობა:</b></br>
 
 <ul>
-  <li>დადის ფეხის წვერებზე</li>
-  <li>ფეხებს აბაკუნებს, ზედმეტად უხეშად თამაშობს, განზრახ ეცემა, ურტყავს ან ეჯახება საგნებს/ადამიანებს</li>
-  <li>გადამეტებით ძლიერ ისვრის ბურთს, ძალზედ ძლიერ უჭირავს ფანქარი (ან პირიქით), მაგრად აჭერს ფანქარს (ან პირიქით)</li>
-  <li>პრობლემები აქვს ღილების შეკვრასთან და ჩაცმის პროცესთან</li>
-  <li>გამუდმებით ცქმუტავს მჯდომიარე აქტივობებისას</li>
-  <li>ხტუნავს არა სინქრონულად, მოუქნელი სიარულის მანერა, ადვილად იღლება/ ლეთარგიულია, თითქოს მისი სხეულის არ ესმის</li>
-  <li>უხეშად ეპყრობა სათამაშოებს, ხშირად ტეხავს, ამსხვრევს მათ</li>
-  <li>თვალდახუჭულს მოძრაობები ერევა</li>
+  <li data-i18n-html="post.li11">დადის ფეხის წვერებზე</li>
+  <li data-i18n-html="post.li12">ფეხებს აბაკუნებს, ზედმეტად უხეშად თამაშობს, განზრახ ეცემა, ურტყავს ან ეჯახება საგნებს/ადამიანებს</li>
+  <li data-i18n-html="post.li13">გადამეტებით ძლიერ ისვრის ბურთს, ძალზედ ძლიერ უჭირავს ფანქარი (ან პირიქით), მაგრად აჭერს ფანქარს (ან პირიქით)</li>
+  <li data-i18n-html="post.li14">პრობლემები აქვს ღილების შეკვრასთან და ჩაცმის პროცესთან</li>
+  <li data-i18n-html="post.li15">გამუდმებით ცქმუტავს მჯდომიარე აქტივობებისას</li>
+  <li data-i18n-html="post.li16">ხტუნავს არა სინქრონულად, მოუქნელი სიარულის მანერა, ადვილად იღლება/ ლეთარგიულია, თითქოს მისი სხეულის არ ესმის</li>
+  <li data-i18n-html="post.li17">უხეშად ეპყრობა სათამაშოებს, ხშირად ტეხავს, ამსხვრევს მათ</li>
+  <li data-i18n-html="post.li18">თვალდახუჭულს მოძრაობები ერევა</li>
 </ul>
 <br>
 <br>
-<b>ვესტიბულური მგრძნობელობა:</b>
+<b data-i18n-html="post.b3">ვესტიბულური მგრძნობელობა:</b>
 <ul style="list-style-type:decimal;">
-  <li>უყვარს ტრიალი, ქანაობა ან თავდაყირა ყოფნა, გამუდმებით მოძრაობს, ქანაობს/ ირწევა ჯდომისას ან დგომისას</li>
-  <li>ეშინია მოძრაობის, ხშირად მანქანით მგზავრობას ვერ იტანს</li>
-  <li>მშვიდია, შეზღუდულად იცვლის მდგომარეობას</li>
-  <li>არ უყვარს სასრიალოები და საქანელები, არ ცოცავს, დიზორიენტირებული და შეშინებულია, როდესაც ვერტიკალურ მდგომარეობას იცვლის</li>
-  <li>შეიძლება ძალზედ გონივრულად და მოქნილად  იმოქმედოს, რათა თავიდან აიცილოს სხვადასხვა სივრცული მოძრაობები</li>
-  <li>უჭირს კიბეზე ჩასვლა, ეშინია ლიფტების, ესკალატორების</li>
-  <li>ეშინია ტუალტზე დაჯდომის (თუ ვერ წვდება იატაკს/ საყრდენს)</li>
-  <li>,,თხუპნია“ მჭამელია, ხშირად ეღვრება საჭმელი</li>
-  <li>ცუდი ბალანსი აქვს, უჭირს ველოსიპედის ტარება</li>
+  <li data-i18n-html="post.li19">უყვარს ტრიალი, ქანაობა ან თავდაყირა ყოფნა, გამუდმებით მოძრაობს, ქანაობს/ ირწევა ჯდომისას ან დგომისას</li>
+  <li data-i18n-html="post.li20">ეშინია მოძრაობის, ხშირად მანქანით მგზავრობას ვერ იტანს</li>
+  <li data-i18n-html="post.li21">მშვიდია, შეზღუდულად იცვლის მდგომარეობას</li>
+  <li data-i18n-html="post.li22">არ უყვარს სასრიალოები და საქანელები, არ ცოცავს, დიზორიენტირებული და შეშინებულია, როდესაც ვერტიკალურ მდგომარეობას იცვლის</li>
+  <li data-i18n-html="post.li23">შეიძლება ძალზედ გონივრულად და მოქნილად  იმოქმედოს, რათა თავიდან აიცილოს სხვადასხვა სივრცული მოძრაობები</li>
+  <li data-i18n-html="post.li24">უჭირს კიბეზე ჩასვლა, ეშინია ლიფტების, ესკალატორების</li>
+  <li data-i18n-html="post.li25">ეშინია ტუალტზე დაჯდომის (თუ ვერ წვდება იატაკს/ საყრდენს)</li>
+  <li data-i18n-html="post.li26">,,თხუპნია“ მჭამელია, ხშირად ეღვრება საჭმელი</li>
+  <li data-i18n-html="post.li27">ცუდი ბალანსი აქვს, უჭირს ველოსიპედის ტარება</li>
 </ul>
 <br><br>
 
-<b>ვიზუალური მგრძნობელობა:</b></br>
+<b data-i18n-html="post.b4">ვიზუალური მგრძნობელობა:</b></br>
 <ul style="list-style-type:decimal;">
-  <li>ფოკუსირებას არ ახდენს საგნებზე</li>
-  <li>არ/ ნაკლებად ამყარებს თვალით კონტაქტს</li>
-  <li>ვერ პოულობს საგნებს - ვერ აკავშირებს დანახულსა და გაგონილს</li>
-  <li>მოძრაობას თვალს არ ადევნებს / უჭირს ბურთის დაჭერა</li>
-  <li>იოლად ეფანტება ვიზუალური ყურადღება - უყურებს გარემოში არსებულ სხვა საგნებს</li>
-  <li>უჭირს მზერის ფიქსაცია და მიზანმიმართული თვალიერება</li>
+  <li data-i18n-html="post.li28">ფოკუსირებას არ ახდენს საგნებზე</li>
+  <li data-i18n-html="post.li29">არ/ ნაკლებად ამყარებს თვალით კონტაქტს</li>
+  <li data-i18n-html="post.li30">ვერ პოულობს საგნებს - ვერ აკავშირებს დანახულსა და გაგონილს</li>
+  <li data-i18n-html="post.li31">მოძრაობას თვალს არ ადევნებს / უჭირს ბურთის დაჭერა</li>
+  <li data-i18n-html="post.li32">იოლად ეფანტება ვიზუალური ყურადღება - უყურებს გარემოში არსებულ სხვა საგნებს</li>
+  <li data-i18n-html="post.li33">უჭირს მზერის ფიქსაცია და მიზანმიმართული თვალიერება</li>
 </ul>
 
 <br><br>
-<b>აუდიალური მგრძნობელობა:</b></br>
+<b data-i18n-html="post.b5">აუდიალური მგრძნობელობა:</b></br>
 
 <ul style="list-style-type:decimal;">
-  <li>აქვს ჭარბად ვოკალიზაციები</li>
-  <li>მუდმივად ღიღინებს, საუბრობს თამაშის დროს ან სიარულისას (მუდმივად ლაპარაკობს საკუთარ თავთან)</li>
-  <li>საუბრობს მაღალ ხმაზე (თითქოს ყვირის)</li>
-  <li>ცდილობს საგნებს გამოაცემინოს ინტენსიური ხმები</li>
-  <li>ხშირად ყურებზე იფარებს ხელებს</li>
-  <li>მარტივად ეფანტება ყურადღება ნებისმიერი ხმის წარმოქმნისას, მაგ: ეზოდან ხმა, გვერდითა ოთახიდან TV ხმა, დიალოგი სხვა ოთახიდან ადა ა.შ.</li>
+  <li data-i18n-html="post.li34">აქვს ჭარბად ვოკალიზაციები</li>
+  <li data-i18n-html="post.li35">მუდმივად ღიღინებს, საუბრობს თამაშის დროს ან სიარულისას (მუდმივად ლაპარაკობს საკუთარ თავთან)</li>
+  <li data-i18n-html="post.li36">საუბრობს მაღალ ხმაზე (თითქოს ყვირის)</li>
+  <li data-i18n-html="post.li37">ცდილობს საგნებს გამოაცემინოს ინტენსიური ხმები</li>
+  <li data-i18n-html="post.li38">ხშირად ყურებზე იფარებს ხელებს</li>
+  <li data-i18n-html="post.li39">მარტივად ეფანტება ყურადღება ნებისმიერი ხმის წარმოქმნისას, მაგ: ეზოდან ხმა, გვერდითა ოთახიდან TV ხმა, დიალოგი სხვა ოთახიდან ადა ა.შ.</li>
 </ul>
 
 <br><br>
-<b>გემოს მგრძნობელობა:</b></br>
+<b data-i18n-html="post.b6">გემოს მგრძნობელობა:</b></br>
 <ul style="list-style-type:decimal;">
-  <li>სენსიტიურია საკვების ფაქტურების მიმართ (მაგ: შერეული ტიპის საკვები ამოაქვს)</li>
-  <li>ღეჭავს სახელოებს, რბილ საგნებს</li>
-  <li>მგრძნობიარეა საკვების ტემპერატურის მიმართ</li>
-  <li>ჭამს ერთი ტიპის საკვებს, მაგ: სუპები, ფაფები და ა.შ.</li>
-  <li>არ ჭამს ხილს, ბოსტნეულს, ხორცს</li>
-  <li>ჭამს დიდი ლუკმებით</li>
-  <li>ნაკლებად რეაგირებს ინტენსიურ გემოებზე, მაგ: ლიმონი, ხახვი, ნიორი დ ა.შ.</li>
+  <li data-i18n-html="post.li40">სენსიტიურია საკვების ფაქტურების მიმართ (მაგ: შერეული ტიპის საკვები ამოაქვს)</li>
+  <li data-i18n-html="post.li41">ღეჭავს სახელოებს, რბილ საგნებს</li>
+  <li data-i18n-html="post.li42">მგრძნობიარეა საკვების ტემპერატურის მიმართ</li>
+  <li data-i18n-html="post.li43">ჭამს ერთი ტიპის საკვებს, მაგ: სუპები, ფაფები და ა.შ.</li>
+  <li data-i18n-html="post.li44">არ ჭამს ხილს, ბოსტნეულს, ხორცს</li>
+  <li data-i18n-html="post.li45">ჭამს დიდი ლუკმებით</li>
+  <li data-i18n-html="post.li46">ნაკლებად რეაგირებს ინტენსიურ გემოებზე, მაგ: ლიმონი, ხახვი, ნიორი დ ა.შ.</li>
 </ul>
 
 <br><br>
-<b>ყნოსვის მგრძნობელობა:</b><br>
+<b data-i18n-html="post.b7">ყნოსვის მგრძნობელობა:</b><br>
 
 <ul style="list-style-type:decimal;">
-  <li>ზედმეტად კარგად ანსხვავებს გარემოში არსებულ სურნელებს, ყველაფერს ყნოსავს ან ყურადღებას არ აქცევს უსიამოვნო/ მძაფრს სუნს</li>
-  <li>ჩივის, რომ საჭმელს ცუდი სუნი აქვს, სადილობისას არა კომფორტუალდ გრძნობს თავს</li>
-  <li>ამჩნევს, თუ როგორი სუნი აქვთ ადამიანებს / საგნებს / სივრცეებს</li>
+  <li data-i18n-html="post.li47">ზედმეტად კარგად ანსხვავებს გარემოში არსებულ სურნელებს, ყველაფერს ყნოსავს ან ყურადღებას არ აქცევს უსიამოვნო/ მძაფრს სუნს</li>
+  <li data-i18n-html="post.li48">ჩივის, რომ საჭმელს ცუდი სუნი აქვს, სადილობისას არა კომფორტუალდ გრძნობს თავს</li>
+  <li data-i18n-html="post.li49">ამჩნევს, თუ როგორი სუნი აქვთ ადამიანებს / საგნებს / სივრცეებს</li>
 </ul>
 
 <br><br>
-<b>ინტეროცეპტული მგრძნობელობა:</b></br>
+<b data-i18n-html="post.b8">ინტეროცეპტული მგრძნობელობა:</b></br>
 <ul style="list-style-type:decimal;">
-  <li>წელის კუნთების მოდუნება/შეკუმშვა</li>
-  <li>შარდის ბუშტის კონტროლი (დაცლა/ შეკავება)</li>
+  <li data-i18n-html="post.li50">წელის კუნთების მოდუნება/შეკუმშვა</li>
+  <li data-i18n-html="post.li51">შარდის ბუშტის კონტროლი (დაცლა/ შეკავება)</li>
 </ul>
 
 <br><br>
-<b>ზეგავლენა სოციალურ გარემოზე</b></br>
+<b data-i18n-html="post.b9">ზეგავლენა სოციალურ გარემოზე</b></br>
 <ul style="list-style-type:decimal;">
-  <li>უჭირს თანატოლებთან შესაბამისი ურთიერთობა, ეშინია სხვადასხვა სოციალური სიტუაციების (უკეთ კონტაქტობს უფრო დიდი ასაკის ბავშვებთან, უფროსებთან)</li>
-  <li>არ თამაშობს თანატოლებთან (ინიციატივის სიმწირე), ვერ ინარჩუნებს თამაშს უფროსთან (ვიწრო ინტერესის სფერო)</li>
-  <li>უჭირს ემოციების სწორედ აღქმა/გაგება, შესაძლოა იცინოდეს, როდესაც ვინმე სიბრაზეს გამოხატავს</li>
-  <li>სპონტანურად არ ურთიერთობს თანატოლებთან</li>
-  <li>ვერ იგებს სოციალურ სიგნალებს, შესაძლოა ვერ იყენებდეს შესაფერ სახის გამომეტყველებას/სოციალური სიგნალს</li>
-  <li>ურთიერსაწინააღმდეგო ქცევა ჰიპერაქტიული ან ჰიპერრეაქტიული</li>
-  <li> ძნელად დასამშვიდებელი</li>
-  <li>ერთი საქმიანობიდან მეორეზე გადართვის სირთულე</li>
-  <li> ადვილად შინდება და მძიმედ რეაგირებს, ან პირიქით არ რეაგირებს სხვადასხვა სტიმულებზე/ გარემოზე/ ადამიანებზე</li>
+  <li data-i18n-html="post.li52">უჭირს თანატოლებთან შესაბამისი ურთიერთობა, ეშინია სხვადასხვა სოციალური სიტუაციების (უკეთ კონტაქტობს უფრო დიდი ასაკის ბავშვებთან, უფროსებთან)</li>
+  <li data-i18n-html="post.li53">არ თამაშობს თანატოლებთან (ინიციატივის სიმწირე), ვერ ინარჩუნებს თამაშს უფროსთან (ვიწრო ინტერესის სფერო)</li>
+  <li data-i18n-html="post.li54">უჭირს ემოციების სწორედ აღქმა/გაგება, შესაძლოა იცინოდეს, როდესაც ვინმე სიბრაზეს გამოხატავს</li>
+  <li data-i18n-html="post.li55">სპონტანურად არ ურთიერთობს თანატოლებთან</li>
+  <li data-i18n-html="post.li56">ვერ იგებს სოციალურ სიგნალებს, შესაძლოა ვერ იყენებდეს შესაფერ სახის გამომეტყველებას/სოციალური სიგნალს</li>
+  <li data-i18n-html="post.li57">ურთიერსაწინააღმდეგო ქცევა ჰიპერაქტიული ან ჰიპერრეაქტიული</li>
+  <li data-i18n-html="post.li58"> ძნელად დასამშვიდებელი</li>
+  <li data-i18n-html="post.li59">ერთი საქმიანობიდან მეორეზე გადართვის სირთულე</li>
+  <li data-i18n-html="post.li60"> ადვილად შინდება და მძიმედ რეაგირებს, ან პირიქით არ რეაგირებს სხვადასხვა სტიმულებზე/ გარემოზე/ ადამიანებზე</li>
 </ul>
 
 <br>
@@ -240,50 +265,50 @@
     @media(max-width:768px){.related-btn{display:none;}}
   </style>
   <section class="container" style="margin-top: 50px;">
-    <h4 style="margin-bottom:25px;">სხვა ბლოგები:</h4>
+    <h4 style="margin-bottom:25px;" data-i18n="common.more_articles">სხვა ბლოგები:</h4>
     <div class="related-wrap">
       <button class="related-btn related-btn-prev" onclick="this.parentElement.querySelector('.related-carousel').scrollBy({left:-300,behavior:'smooth'})">&#8249;</button>
       <div class="related-carousel">
         <div class="card">
-          <a href="adreuli-intervencia.html"><img src="../assets/img/adreuli-intervencia-cover.jpeg" class="card-img-top" alt="ადრეული ინტერვენცია"></a>
+          <a href="adreuli-intervencia.html"><img src="../assets/img/adreuli-intervencia-cover.jpeg" class="card-img-top" alt="ადრეული ინტერვენცია" data-i18n-attr="alt:related.t.adreuli-intervencia"></a>
           <div class="card-body">
-            <a href="adreuli-intervencia.html"><h5 class="card-title">ბავშვთა განვითარების ადრეული იდენტიფიკაციისა და მხარდაჭერის პროექტი</h5></a>
-            <p class="card-text">აუტიზმის ცნობადობის ამაღლების მსოფლიო დღესთან დაკავშირებით, „ბრაით აკადემი" ახორციელებს სოციალურ პროექტს ...</p>
+            <a href="adreuli-intervencia.html"><h5 class="card-title" data-i18n="related.t.adreuli-intervencia">ბავშვთა განვითარების ადრეული იდენტიფიკაციისა და მხარდაჭერის პროექტი</h5></a>
+            <p class="card-text" data-i18n-html="related.e.adreuli-intervencia">აუტიზმის ცნობადობის ამაღლების მსოფლიო დღესთან დაკავშირებით, „ბრაით აკადემი" ახორციელებს სოციალურ პროექტს ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="michajvuloba.html"><img src="../assets/img/img32.jpg" class="card-img-top" alt="მიჯაჭვულობა"></a>
+          <a href="michajvuloba.html"><img src="../assets/img/img32.jpg" class="card-img-top" alt="მიჯაჭვულობა" data-i18n-attr="alt:related.t.michajvuloba"></a>
           <div class="card-body">
-            <a href="michajvuloba.html"><h5 class="card-title">მიჯაჭვულობა, ბავშვობისა და ზრდასრულობის განვითარების ფუნდამენტი</h5></a>
-            <p class="card-text">მიჯაჭვულობა არის ძლიერი ემოციური კავშირი რომელიც მყარდება ახალშობილსა და მასზე მზრუნველ ადამიანს შორის ...</p>
+            <a href="michajvuloba.html"><h5 class="card-title" data-i18n="related.t.michajvuloba">მიჯაჭვულობა, ბავშვობისა და ზრდასრულობის განვითარების ფუნდამენტი</h5></a>
+            <p class="card-text" data-i18n-html="related.e.michajvuloba">მიჯაჭვულობა არის ძლიერი ემოციური კავშირი რომელიც მყარდება ახალშობილსა და მასზე მზრუნველ ადამიანს შორის ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="winasaskolo-unarebi.html"><img src="../assets/img/winasaskolo-unarebi.jpg" class="card-img-top" alt="წინასასკოლო უნარები"></a>
+          <a href="winasaskolo-unarebi.html"><img src="../assets/img/winasaskolo-unarebi.jpg" class="card-img-top" alt="წინასასკოლო უნარები" data-i18n-attr="alt:related.t.winasaskolo-unarebi"></a>
           <div class="card-body">
-            <a href="winasaskolo-unarebi.html"><h5 class="card-title">წინასასკოლო უნარები</h5></a>
-            <p class="card-text">მშობლებს ხშირად უჩნდებათ კითხვა: "მზად არის თუ არა ჩემი შვილი სკოლისთვის?" ...</p>
+            <a href="winasaskolo-unarebi.html"><h5 class="card-title" data-i18n="related.t.winasaskolo-unarebi">წინასასკოლო უნარები</h5></a>
+            <p class="card-text" data-i18n-html="related.e.winasaskolo-unarebi">მშობლებს ხშირად უჩნდებათ კითხვა: "მზად არის თუ არა ჩემი შვილი სკოლისთვის?" ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="stresi-bavshvebshi.html"><img src="../assets/img/stresibavshvebshi.jpg" class="card-img-top" alt="სტრესი ბავშვებში"></a>
+          <a href="stresi-bavshvebshi.html"><img src="../assets/img/stresibavshvebshi.jpg" class="card-img-top" alt="სტრესი ბავშვებში" data-i18n-attr="alt:related.t.stresi-bavshvebshi"></a>
           <div class="card-body">
-            <a href="stresi-bavshvebshi.html"><h5 class="card-title">როგორ ამოვიცნოთ ბავშვებში ფსიქოლოგიური სტრესის ნიშნები</h5></a>
-            <p class="card-text">ბავშვები სხვადასხვანაირად რეაგირებენ მათ ირგვლივ არსებულ უარყოფით მოვლენებზე ...</p>
+            <a href="stresi-bavshvebshi.html"><h5 class="card-title" data-i18n="related.t.stresi-bavshvebshi">როგორ ამოვიცნოთ ბავშვებში ფსიქოლოგიური სტრესის ნიშნები</h5></a>
+            <p class="card-text" data-i18n-html="related.e.stresi-bavshvebshi">ბავშვები სხვადასხვანაირად რეაგირებენ მათ ირგვლივ არსებულ უარყოფით მოვლენებზე ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="denveris-modeli.html"><img src="../assets/img/img4.jpg" class="card-img-top" alt="დენვერის მოდელი"></a>
+          <a href="denveris-modeli.html"><img src="../assets/img/img4.jpg" class="card-img-top" alt="დენვერის მოდელი" data-i18n-attr="alt:related.t.denveris-modeli"></a>
           <div class="card-body">
-            <a href="denveris-modeli.html"><h5 class="card-title">დენვერის მოდელი</h5></a>
-            <p class="card-text">ადრეული განვითარების დენვერის მოდელი არის განვითარებაზე, ქცევაზე, რუტინებზე და თამაშზე დაფუძნ...</p>
+            <a href="denveris-modeli.html"><h5 class="card-title" data-i18n="related.t.denveris-modeli">დენვერის მოდელი</h5></a>
+            <p class="card-text" data-i18n-html="related.e.denveris-modeli">ადრეული განვითარების დენვერის მოდელი არის განვითარებაზე, ქცევაზე, რუტინებზე და თამაშზე დაფუძნ...</p>
           </div>
         </div>
         <div class="card">
-          <a href="bavshvis-ganvitareba.html"><img src="../assets/img/img3.jpg" class="card-img-top" alt="ბავშვის განვითარება"></a>
+          <a href="bavshvis-ganvitareba.html"><img src="../assets/img/img3.jpg" class="card-img-top" alt="ბავშვის განვითარება" data-i18n-attr="alt:related.t.bavshvis-ganvitareba"></a>
           <div class="card-body">
-            <a href="bavshvis-ganvitareba.html"><h5 class="card-title">ბავშვის განვითარება</h5></a>
-            <p class="card-text">ფიზიკური აქტივობა ეხმარება ბავშვს კუნთების გაძლიერებაში, რაც ისეთი უნარების განვითარებისთვის სჭირდება ...</p>
+            <a href="bavshvis-ganvitareba.html"><h5 class="card-title" data-i18n="related.t.bavshvis-ganvitareba">ბავშვის განვითარება</h5></a>
+            <p class="card-text" data-i18n-html="related.e.bavshvis-ganvitareba">ფიზიკური აქტივობა ეხმარება ბავშვს კუნთების გაძლიერებაში, რაც ისეთი უნარების განვითარებისთვის სჭირდება ...</p>
           </div>
         </div>
       </div>
@@ -295,7 +320,7 @@
     <div class="container-fluid pt-4 m-0 p-0 pt-5" style="display:none;">
       <div class="row mb-3">
         <div class="col-md-8 col-xl-6 text-start mx-auto">
-          <h3 class="text-center" style="color: rgb(109,192,174);">ჩვენი პროფესიონალი გუნდი:</h3>
+          <h3 class="text-center" style="color: rgb(109,192,174);" data-i18n="common.team_heading">ჩვენი პროფესიონალი გუნდი:</h3>
         </div>
       </div>
       <div class="row">
@@ -315,7 +340,7 @@
           <p class="text-center"></p>
         </div>
         <div class="col-md-3 text-center d-none d-lg-inline">
-          <h5 style="color: rgb(109,192,174);">მედია</h5>
+          <h5 style="color: rgb(109,192,174);" data-i18n="footer.media">მედია</h5>
           <ul class="list-unstyled" style="line-height:30px;">
             <li><a href="https://www.facebook.com/BrightAcademy.ge" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="margin-right: 4px;">
                   <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor"></path>
@@ -340,7 +365,7 @@
           </ul>
         </div>
         <div class="col-md-4 col-lg-2">
-          <h5 style="color: rgb(109,192,174);">გვერდები</h5>
+          <h5 style="color: rgb(109,192,174);" data-i18n="footer.pages">გვერდები</h5>
           <ul class="list-unstyled" style="line-height:30px;">
             <li><a href="../index.html">მთავარი</a></li>
             <li><a href="../services.html">სერვისები</a></li>
@@ -351,7 +376,7 @@
           </ul>
         </div>
         <div class="col-md-5 col-lg-4 text-center">
-          <h5 style="color: rgb(109,192,174);">კონტაქტი</h5>
+          <h5 style="color: rgb(109,192,174);" data-i18n="footer.contact">კონტაქტი</h5>
           <ul class="list-unstyled" style="line-height:35px;">
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
@@ -360,14 +385,14 @@
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                 <path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"></path>
-              </svg>&nbsp; 09:00 - 19:00</li>
+              </svg>&nbsp; <span data-i18n="footer.hours">09:00 - 19:00</span></li>
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                 <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-              </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
+              </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank" data-i18n="footer.addr.saburtalo">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                             <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
+                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank" data-i18n="footer.addr.dighomi">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
           </ul>
         </div>
       </div>
@@ -384,10 +409,10 @@
           <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"></path>
         </svg></a></div>
     <div class="container text-white py-4 py-lg-5">
-      <p class="mb-0" style="color:#fff;"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
+      <p class="mb-0" style="color:#fff;" data-i18n-html="footer.brand"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
     </div>
       <div class="container text-center pb-3">
-        <p class="mb-0" style="font-size: 12px; color: #888;">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
+        <p class="mb-0" style="font-size: 12px; color: #888;" data-i18n-html="footer.credit">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
     </div>
 </footer><!-- End: Footer Dark -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -396,7 +421,7 @@
   <script src="../assets/js/slider.js?h=75db9baacc24c65f36dd8b8e3d601eee"></script>
 
 <a href="https://wa.me/+995597104028" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" class="whatsapp-icon">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" data-i18n-attr="alt:common.whatsapp_alt" class="whatsapp-icon">
 </a>
 </body>
 

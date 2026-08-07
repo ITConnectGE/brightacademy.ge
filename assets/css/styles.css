@@ -90,6 +90,137 @@ a {
 }
 
 
+/* ენის გადამრთველი */
+.lang-switch {
+  display: flex;
+  align-items: center;
+}
+
+.lang-dropdown {
+  position: relative;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #161e54;
+  background: #fff;
+  border: 1px solid #e3e6ea;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: border-color .2s linear, color .2s linear, box-shadow .2s linear;
+}
+
+.lang-toggle:hover {
+  border-color: #5CA595;
+  color: #5CA595;
+}
+
+.lang-dropdown.open .lang-toggle {
+  border-color: #5CA595;
+  color: #5CA595;
+  box-shadow: 0 0 0 3px rgba(92, 165, 149, .13);
+}
+
+.lang-globe {
+  flex: none;
+  opacity: .75;
+}
+
+.lang-caret {
+  flex: none;
+  margin-left: 2px;
+  transition: transform .2s ease;
+}
+
+.lang-dropdown.open .lang-caret {
+  transform: rotate(180deg);
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 9px);
+  right: 0;
+  z-index: 1050;
+  min-width: 172px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #eceff2;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(22, 30, 84, .14);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-7px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s;
+}
+
+.lang-dropdown.open .lang-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 14px;
+  color: #161e54;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background .15s linear, color .15s linear;
+}
+
+.lang-option:hover {
+  background: #f2f7f6;
+  color: #5CA595;
+}
+
+.lang-option.is-active {
+  color: #5CA595;
+  font-weight: 600;
+}
+
+.lang-check {
+  flex: none;
+  opacity: 0;
+  transition: opacity .15s linear;
+}
+
+.lang-option.is-active .lang-check {
+  opacity: 1;
+}
+
+/* დაკეცილ მობილურ მენიუში ჩამონათვალი ადგილზე იშლება */
+@media (max-width: 767.98px) {
+  .lang-menu {
+    position: static;
+    display: none;
+    width: 100%;
+    margin-top: 8px;
+    box-shadow: none;
+    transform: none;
+  }
+
+  .lang-dropdown.open .lang-menu {
+    display: block;
+    transform: none;
+  }
+}
+
+
 .team-img img {
   width: 630px;
   /* height: 527px; */

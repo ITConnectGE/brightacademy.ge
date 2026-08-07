@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="ka">
 
 <head>
     <meta charset="utf-8">
@@ -32,12 +32,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/styles.css?h=200e48989e36d3832116aa0051e58012">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
+  <link rel="stylesheet" href="../assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
+  <link rel="stylesheet" href="../assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
+  <link rel="stylesheet" href="../assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
+  <link rel="stylesheet" href="../assets/css/styles.css?h=df5d856d8be600000affa9b112cd3c87">
+  <link rel="stylesheet" href="../assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
+  <link rel="stylesheet" href="../assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
 
 <style>
 .whatsapp-float {
@@ -60,6 +60,22 @@
   transform: scale(1.1);
 }
 </style>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('ba-lang') !== 'en') return;
+        document.documentElement.className += ' i18n-pending';
+        var s = document.createElement('style');
+        s.id = 'i18n-fouc';
+        s.textContent = 'body{visibility:hidden}';
+        document.head.appendChild(s);
+        setTimeout(function () { if (s.parentNode) s.parentNode.removeChild(s); }, 2000);
+      } catch (e) {}
+    })();
+  </script>
+  <script src="../assets/i18n/en/common.js"></script>
+  <script src="../assets/i18n/en/team/TamarKoberidze.js"></script>
+  <script src="../assets/js/i18n.js" defer></script>
 </head>
 
 <body>
@@ -76,11 +92,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navcol-2">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../index.html">მთავარი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../brighacademy.html">ჩვენს შესახებ</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../services.html">სერვისები</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../blog.html">ბლოგი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../contact.html">კონტაქტი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../index.html" data-i18n="nav.home">მთავარი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../brighacademy.html" data-i18n="nav.about">ჩვენს შესახებ</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../services.html" data-i18n="nav.services">სერვისები</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../blog.html" data-i18n="nav.blog">ბლოგი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../contact.html" data-i18n="nav.contact">კონტაქტი</a></li>
+                <li class="nav-item lang-switch">
+                    <div class="lang-dropdown">
+                        <button class="lang-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><svg class="lang-globe" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"></path></svg><span class="lang-current">ქართული</span><svg class="lang-caret" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 9l6 6 6-6"></path></svg></button>
+                        <ul class="lang-menu" role="listbox">
+                            <li><button class="lang-option" type="button" role="option" data-lang="ka"><span>ქართული</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                            <li><button class="lang-option" type="button" role="option" data-lang="en"><span>English</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                        </ul>
+                    </div>
+                </li>
                 
             </ul>
         </div>
@@ -92,8 +117,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center">
-          <h3 data-aos="fade-right" data-aos-delay="200" style="color:#161e54;font-weight:900;">თამარ კობერიძე</h3>
-          <p style="line-height: 30px;"><strong>სამუშაო გამოცდილება</strong>2023 წლიდან - Bright Academy       ფსიქოთერაპევტი, ადრეული ინტერვენციის დენვერის მოდელის სპეციალისტი<br />2016 წლიდან დღემდე - საქართველოს ტექნიკური უნივერსიტეტი ინკლუზიური პროფესიული განათლების სპეციალისტი<br />2021-2022 - MAC Georgia, პროექტის ასისტენტი<br />2020 წელი - სარკინიგზო ტრანსპორტის კოლეჯი, ინკლუზიური პროფესიული განათლების სპეციალისტი<br />2018-2020 - ი. ციციშვილის ბავშვთა ახალი კლინიკა, ფსიქოლოგი<br />2017-2018- საქართველოს ტექნიკური უნივერსიტეტი, საგნობრივი პროფესიული საგანმანათლებლო პროგრამების უფროსი<br /> სპეციალისტი<br />2016 წელი- მენტალური ჯანმრთელობის ცენტრი, ფსიქოლოგი<br />2014-2015- არასამთავრობო კვლევითი ორგანიზაცია BCG    ფსიქოლოგი<br /><br /><strong>ტრენინგები</strong>10.2020-01.2021 აზროვნების აკადემია - სიღრმის ფსიქოლოგია - რეზო კორინთელი. <br />10.2018-10.2018 - mca georgia, გენდერი და გენდერულად ინკლუზიური სწავლება და პრაქტიკა;<br />07.2018-07.2018 - MAC Georgia, - განვითარების დარღვევები, რთული ქცევის მართვა, ინკლუზიური განათლება;<br />09.2017-09.2017 - საქართველოს განათლებისა და მეცნიერების სამინისტრო, ინკლუზიური განათლება;<br />09.2014-09.2014 - ილიას სახელწიფო უნივერსიტეტი, აუტიზმი და ქცევის გამოყენებითი ანალიზი;<br />03.2014-05.2014 - მასწავლებელთა სახლი, ინკლუზიური განათლება;<br />03.2013-06.2013 - გლდანის ფსიქიატრიული საავადმყოფო, პრაქტიკა გამოყენებით ფსიქოლოგიაში;<br />12.2012-12.2012 - სოციალური თერაპიის სახლი, ხატვითი თერაპიული კურსი თემაზე: გონებრივი შეფერხების ფორმები და მათთან თერაპიური მიმართება;<br />06.2012-06.2012 - სოციალური თერაპიის სახლი, ფსიქოლოგია (ადამიანის ხასიათობრივი თვისებები);<br />09.2010-06.2012 - ილიას სახელმწიფო უნივერსიტეტი, ინკლუზიური განათლების სალექციო კურსების მოდული.<br /><br /></p>
+          <h3 data-aos="fade-right" data-aos-delay="200" style="color:#161e54;font-weight:900;" data-i18n="bio.name">თამარ კობერიძე</h3>
+          <p style="line-height: 30px;" data-i18n-html="bio.text"><strong>სამუშაო გამოცდილება</strong>2023 წლიდან - Bright Academy       ფსიქოთერაპევტი, ადრეული ინტერვენციის დენვერის მოდელის სპეციალისტი<br />2016 წლიდან დღემდე - საქართველოს ტექნიკური უნივერსიტეტი ინკლუზიური პროფესიული განათლების სპეციალისტი<br />2021-2022 - MAC Georgia, პროექტის ასისტენტი<br />2020 წელი - სარკინიგზო ტრანსპორტის კოლეჯი, ინკლუზიური პროფესიული განათლების სპეციალისტი<br />2018-2020 - ი. ციციშვილის ბავშვთა ახალი კლინიკა, ფსიქოლოგი<br />2017-2018- საქართველოს ტექნიკური უნივერსიტეტი, საგნობრივი პროფესიული საგანმანათლებლო პროგრამების უფროსი<br /> სპეციალისტი<br />2016 წელი- მენტალური ჯანმრთელობის ცენტრი, ფსიქოლოგი<br />2014-2015- არასამთავრობო კვლევითი ორგანიზაცია BCG    ფსიქოლოგი<br /><br /><strong>ტრენინგები</strong>10.2020-01.2021 აზროვნების აკადემია - სიღრმის ფსიქოლოგია - რეზო კორინთელი. <br />10.2018-10.2018 - mca georgia, გენდერი და გენდერულად ინკლუზიური სწავლება და პრაქტიკა;<br />07.2018-07.2018 - MAC Georgia, - განვითარების დარღვევები, რთული ქცევის მართვა, ინკლუზიური განათლება;<br />09.2017-09.2017 - საქართველოს განათლებისა და მეცნიერების სამინისტრო, ინკლუზიური განათლება;<br />09.2014-09.2014 - ილიას სახელწიფო უნივერსიტეტი, აუტიზმი და ქცევის გამოყენებითი ანალიზი;<br />03.2014-05.2014 - მასწავლებელთა სახლი, ინკლუზიური განათლება;<br />03.2013-06.2013 - გლდანის ფსიქიატრიული საავადმყოფო, პრაქტიკა გამოყენებით ფსიქოლოგიაში;<br />12.2012-12.2012 - სოციალური თერაპიის სახლი, ხატვითი თერაპიული კურსი თემაზე: გონებრივი შეფერხების ფორმები და მათთან თერაპიური მიმართება;<br />06.2012-06.2012 - სოციალური თერაპიის სახლი, ფსიქოლოგია (ადამიანის ხასიათობრივი თვისებები);<br />09.2010-06.2012 - ილიას სახელმწიფო უნივერსიტეტი, ინკლუზიური განათლების სალექციო კურსების მოდული.<br /><br /></p>
         </div>
         <div class="col-md-6"><img class="img-fluid" data-aos="fade-left" data-aos-delay="200" src="https://brightacademy.ge/assets/img/Team/3.jpg" style="max-width:100%;border-radius:40px;padding:5px;"></div>
       </div>
@@ -119,14 +144,14 @@
                 @media screen and (min-width: 601px) { .contactDiv { text-align: right !important; } }
             </style>
             <div class="col-md-9 contactDiv">
-                <h5 style="color: rgb(109,192,174);">კონტაქტი</h5>
+                <h5 style="color: rgb(109,192,174);" data-i18n="footer.contact">კონტაქტი</h5>
                 <ul class="list-unstyled" style="line-height:35px;">
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor"><path d="M284.6 181.9c-10.28-8.344-25.41-6.875-33.75 3.406C242.4 195.6 243.9 210.7 254.2 219.1c11.31 9.25 17.81 22.69 17.81 36.87c0 14.19-6.5 27.62-17.81 36.87c-10.28 8.406-11.78 23.53-3.375 33.78c4.719 5.812 11.62 8.812 18.56 8.812c5.344 0 10.75-1.781 15.19-5.406c22.53-18.44 35.44-45.4 35.44-74.05S307.1 200.4 284.6 181.9z"></path></svg>&nbsp; +995 32 2 18 52 58</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor"><path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"></path></svg>&nbsp; 09:00 - 19:00</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor"><path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"></path></svg>&nbsp; <span data-i18n="footer.hours">09:00 - 19:00</span></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank" data-i18n="footer.addr.saburtalo">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                             <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
+                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank" data-i18n="footer.addr.dighomi">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
                 </ul>
                 <div>
                     <a href="https://www.facebook.com/BrightAcademy.ge" target="_blank" style="color:white !important;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="margin-right: 4px;"><path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor"></path></svg>Facebook</a> &nbsp;&nbsp;
@@ -136,15 +161,15 @@
         </div>
     </div>
     <div class="container text-white py-4 py-lg-5">
-        <p class="mb-0" style="color:#fff; display:none;">ბრაით აკადემი * Bright Academy</p>
+        <p class="mb-0" style="color:#fff; display:none;" data-i18n-html="footer.brand">ბრაით აკადემი * Bright Academy</p>
     </div>
     <div class="container text-center pb-3">
-        <p class="mb-0" style="font-size: 12px; color: #888;">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
+        <p class="mb-0" style="font-size: 12px; color: #888;" data-i18n-html="footer.credit">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
     </div>
 </footer>
 
 <a href="https://wa.me/+995597104028" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" class="whatsapp-icon">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" data-i18n-attr="alt:common.whatsapp_alt" class="whatsapp-icon">
 </a>
 </body>
 

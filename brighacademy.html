@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="ka">
 
 <head>
     <meta charset="utf-8">
@@ -28,12 +28,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/styles.css?h=200e48989e36d3832116aa0051e58012">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
+  <link rel="stylesheet" href="assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
+  <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
+  <link rel="stylesheet" href="assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
+  <link rel="stylesheet" href="assets/css/styles.css?h=df5d856d8be600000affa9b112cd3c87">
+  <link rel="stylesheet" href="assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
+  <link rel="stylesheet" href="assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
   <style>
 .whatsapp-float {
   position: fixed;
@@ -57,6 +57,22 @@
   transform: scale(1.1);
 }
 </style>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('ba-lang') !== 'en') return;
+        document.documentElement.className += ' i18n-pending';
+        var s = document.createElement('style');
+        s.id = 'i18n-fouc';
+        s.textContent = 'body{visibility:hidden}';
+        document.head.appendChild(s);
+        setTimeout(function () { if (s.parentNode) s.parentNode.removeChild(s); }, 2000);
+      } catch (e) {}
+    })();
+  </script>
+  <script src="assets/i18n/en/common.js"></script>
+  <script src="assets/i18n/en/brighacademy.js"></script>
+  <script src="assets/js/i18n.js" defer></script>
 </head>
 
 <body>
@@ -73,11 +89,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navcol-2">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="index.html">მთავარი</a></li>
-                <li class="nav-item"><a class="nav-link active" data-bss-hover-animate="pulse" href="brighacademy.html">ჩვენს შესახებ</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="services.html">სერვისები</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="blog.html">ბლოგი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="contact.html">კონტაქტი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="index.html" data-i18n="nav.home">მთავარი</a></li>
+                <li class="nav-item"><a class="nav-link active" data-bss-hover-animate="pulse" href="brighacademy.html" data-i18n="nav.about">ჩვენს შესახებ</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="services.html" data-i18n="nav.services">სერვისები</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="blog.html" data-i18n="nav.blog">ბლოგი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="contact.html" data-i18n="nav.contact">კონტაქტი</a></li>
+                <li class="nav-item lang-switch">
+                    <div class="lang-dropdown">
+                        <button class="lang-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><svg class="lang-globe" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"></path></svg><span class="lang-current">ქართული</span><svg class="lang-caret" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 9l6 6 6-6"></path></svg></button>
+                        <ul class="lang-menu" role="listbox">
+                            <li><button class="lang-option" type="button" role="option" data-lang="ka"><span>ქართული</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                            <li><button class="lang-option" type="button" role="option" data-lang="en"><span>English</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                        </ul>
+                    </div>
+                </li>
                 
             </ul>
         </div>
@@ -89,8 +114,8 @@
     <div class="container my-3">
       <div class="row">
         <div class="col-md-12 col-xl-12 col-xxl-12 order-first order-md-first pb-3">
-          <h1 style="font-weight:900; color:#161e54;">ბრაით აკადემი</h1>
-          <p style="line-height:1.8; color: #444;">ბავშვთა განვითარების ცენტრის მიზანია, ბავშვის ჰოლისტური ხედვის დანერგვა, თერაპიების მრავლაფეროვნების მისაწვდომობის გაზრდა<br>და მშობელთა ემოციურ კეთილდღეობაზე ზრუნვა<br><br></p>
+          <h1 style="font-weight:900; color:#161e54;" data-i18n="about.h1">ბრაით აკადემი</h1>
+          <p style="line-height:1.8; color: #444;" data-i18n-html="about.intro">ბავშვთა განვითარების ცენტრის მიზანია, ბავშვის ჰოლისტური ხედვის დანერგვა, თერაპიების მრავლაფეროვნების მისაწვდომობის გაზრდა<br>და მშობელთა ემოციურ კეთილდღეობაზე ზრუნვა<br><br></p>
         </div>
       </div>
     </div><!-- End: 1 Row 2 Columns -->
@@ -100,10 +125,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-lg-5 col-xl-5" style="margin-bottom: 28px;">
-          <h1 style="font-weight: 900;color: rgba(22,30,84,0.37);text-align: left;margin-top: -29px;margin-bottom: 26px;">ჩვენი გუნდი</h1><img class="img-fluid" src="https://brightacademy.ge/assets/img/team.jpg?h=7a0e05054b4b06ccfba44112832943e3" style="border-radius:55px;">
+          <h1 style="font-weight: 900;color: rgba(22,30,84,0.37);text-align: left;margin-top: -29px;margin-bottom: 26px;" data-i18n="about.team_h1">ჩვენი გუნდი</h1><img class="img-fluid" src="https://brightacademy.ge/assets/img/team.jpg?h=7a0e05054b4b06ccfba44112832943e3" style="border-radius:55px;">
         </div>
         <div class="col-md-12 col-lg-7 col-xl-7 align-self-center">
-          <p style="line-height:1.9; font-size: 1rem; color: #444;"><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="30" height="27" style="margin-right: 12px;margin-bottom: 2px;">ჩვენ ვაერთიანებთ ბავშვის ყველა საჭიროებას და მიზანს ერთ თერაპიულ სესიაში. <br><br><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="30" height="27" style="margin-right: 12px;margin-bottom: 2px;">ვიყენებთ ჰოლისტურ მიდგომას - ბავშვთან ვმუშაობთ არა რომელიმე კონკრეტულ უნარზე იზოლირებულად,&nbsp;არამედ ვუქმნით გარემოს, სადაც შეძლებს ყველა საჭირო უნარისა, თუ ცოდნის მრავალფეროვან, ბუნებრივ გარემოში ათვისებას, განმტკიცებას, გამოყენებას. <br><br><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="30" height="27" style="margin-right: 12px;margin-bottom: 2px;">მთავარი ფოკუსი მიმართულია ფუნქციური უნარების განვითარებაზე<br>- ყველა ათვისებული ცოდნა უნდა ემსახურებოდეს რეალურ ცხოვრებაში დამოუკიდებლობის გაუმჯობესებას.<br><br><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="30" height="27" style="margin-right: 12px;margin-bottom: 2px;">ბავშვი ერთი სესიის განმავლობაში იღებს ყველა საჭირო სპეცილისტის მიერ ერთობლივად დაგეგმილ პროგრამას. გუნდი სისტემატურად ცვლის ერთმანეთში ინფორმაციას, აფასებს სამუშაო გეგმის მიმდინარეობას, განახლების საჭიროებას და ა.შ.<br><br><br></p>
+          <p style="line-height:1.9; font-size: 1rem; color: #444;"><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="30" height="27" style="margin-right: 12px;margin-bottom: 2px;"><span data-i18n-html="about.point1">ჩვენ ვაერთიანებთ ბავშვის ყველა საჭიროებას და მიზანს ერთ თერაპიულ სესიაში. </span><br><br><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="30" height="27" style="margin-right: 12px;margin-bottom: 2px;"><span data-i18n-html="about.point2">ვიყენებთ ჰოლისტურ მიდგომას - ბავშვთან ვმუშაობთ არა რომელიმე კონკრეტულ უნარზე იზოლირებულად,&nbsp;არამედ ვუქმნით გარემოს, სადაც შეძლებს ყველა საჭირო უნარისა, თუ ცოდნის მრავალფეროვან, ბუნებრივ გარემოში ათვისებას, განმტკიცებას, გამოყენებას. </span><br><br><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="30" height="27" style="margin-right: 12px;margin-bottom: 2px;"><span data-i18n-html="about.point3">მთავარი ფოკუსი მიმართულია ფუნქციური უნარების განვითარებაზე<br>- ყველა ათვისებული ცოდნა უნდა ემსახურებოდეს რეალურ ცხოვრებაში დამოუკიდებლობის გაუმჯობესებას.</span><br><br><img src="https://brightacademy.ge/assets/img/logo.png?h=a40f8a2fcf69b44a76937bb5c4e923b5" width="30" height="27" style="margin-right: 12px;margin-bottom: 2px;"><span data-i18n-html="about.point4">ბავშვი ერთი სესიის განმავლობაში იღებს ყველა საჭირო სპეცილისტის მიერ ერთობლივად დაგეგმილ პროგრამას. გუნდი სისტემატურად ცვლის ერთმანეთში ინფორმაციას, აფასებს სამუშაო გეგმის მიმდინარეობას, განახლების საჭიროებას და ა.შ.</span><br><br><br></p>
         </div>
       </div>
     </div><!-- End: 1 Row 2 Columns -->
@@ -114,7 +139,7 @@
     <div class="container-fluid pt-4 m-0 pt-5">
         <div class="row mb-3">
             <div class="col-md-8 col-xl-6 text-start mx-auto">
-                <h3 class="text-center" style="color: rgb(109,192,174);">ჩვენი პროფესიონალი გუნდი:</h3>
+                <h3 class="text-center" style="color: rgb(109,192,174);" data-i18n="common.team_heading">ჩვენი პროფესიონალი გუნდი:</h3>
             </div>
         </div>
         <div class="row">
@@ -151,7 +176,7 @@
                 <p class="text-center"></p>
             </div>
             <div class="col-md-3 text-center" style="display: none !important;">
-                <h5 style="color: rgb(109,192,174);">მედია</h5>
+                <h5 style="color: rgb(109,192,174);" data-i18n="footer.media">მედია</h5>
                 <ul class="list-unstyled" style="line-height:30px;">
                     <li><a href="https://www.facebook.com/BrightAcademy.ge" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="margin-right: 4px;">
                                 <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor"></path>
@@ -178,20 +203,20 @@
                 }
             </style>
             <div class="col-md-9 contactDiv">
-                <h5 style="color: rgb(109,192,174);">კონტაქტი</h5>
+                <h5 style="color: rgb(109,192,174);" data-i18n="footer.contact">კონტაქტი</h5>
                 <ul class="list-unstyled" style="line-height:35px;">
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                             <path d="M284.6 181.9c-10.28-8.344-25.41-6.875-33.75 3.406C242.4 195.6 243.9 210.7 254.2 219.1c11.31 9.25 17.81 22.69 17.81 36.87c0 14.19-6.5 27.62-17.81 36.87c-10.28 8.406-11.78 23.53-3.375 33.78c4.719 5.812 11.62 8.812 18.56 8.812c5.344 0 10.75-1.781 15.19-5.406c22.53-18.44 35.44-45.4 35.44-74.05S307.1 200.4 284.6 181.9zM345.1 107.1c-10.22-8.344-25.34-6.907-33.78 3.343c-8.406 10.25-6.906 25.37 3.344 33.78c33.88 27.78 53.31 68.18 53.31 110.9s-19.44 83.09-53.31 110.9c-10.25 8.406-11.75 23.53-3.344 33.78c4.75 5.781 11.62 8.781 18.56 8.781c5.375 0 10.75-1.781 15.22-5.438C390.2 367.1 416 313.1 416 255.1S390.2 144.9 345.1 107.1zM406.4 33.15c-10.22-8.344-25.34-6.875-33.78 3.344c-8.406 10.25-6.906 25.37 3.344 33.78C431.9 116.1 464 183.8 464 255.1s-32.09 139.9-88.06 185.7c-10.25 8.406-11.75 23.53-3.344 33.78c4.75 5.781 11.62 8.781 18.56 8.781c5.375 0 10.75-1.781 15.22-5.438C473.5 423.8 512 342.6 512 255.1S473.5 88.15 406.4 33.15zM151.3 174.6C161.1 175.6 172.1 169.5 176 159.6l33.75-84.38C214 64.35 209.1 51.1 200.2 45.86l-67.47-42.17C123.2-2.289 110.9-.8945 102.9 7.08C-34.32 144.3-34.31 367.7 102.9 504.9c7.982 7.984 20.22 9.379 29.75 3.402l67.48-42.19c9.775-6.104 13.9-18.47 9.598-29.3L176 352.5c-3.945-9.963-14.14-16.11-24.73-14.97l-53.24 5.314C78.89 286.7 78.89 225.4 98.06 169.3L151.3 174.6z"></path>
                         </svg>&nbsp; +995 32 2 18 52 58</li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                             <path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"></path>
-                        </svg>&nbsp; 09:00 - 19:00</li>
+                        </svg>&nbsp; <span data-i18n="footer.hours">09:00 - 19:00</span></li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                             <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-                        </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
+                        </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank" data-i18n="footer.addr.saburtalo">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                             <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
+                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank" data-i18n="footer.addr.dighomi">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
                 </ul>
 
                 <div>
@@ -208,10 +233,10 @@
         </div>
     </div><!-- End: 1 Row 4 Columns -->
     <div class="container text-white py-4 py-lg-5">
-        <p class="mb-0" style="color:#fff; display:none;"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
+        <p class="mb-0" style="color:#fff; display:none;" data-i18n-html="footer.brand"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
     </div>
     <div class="container text-center pb-3">
-        <p class="mb-0" style="font-size: 12px; color: #888;">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
+        <p class="mb-0" style="font-size: 12px; color: #888;" data-i18n-html="footer.credit">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
     </div>
 </footer>
 <!-- End: Footer Dark -->
@@ -222,7 +247,7 @@
   <script src="https://brightacademy.ge/assets/js/slider.js?h=75db9baacc24c65f36dd8b8e3d601eee"></script>
   
 <a href="https://wa.me/+995597104028" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" class="whatsapp-icon">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" data-i18n-attr="alt:common.whatsapp_alt" class="whatsapp-icon">
 </a>
 
 </body>

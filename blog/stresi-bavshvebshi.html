@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="ka">
 
 <head>
     <meta charset="utf-8">
@@ -32,12 +32,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/styles.css?h=200e48989e36d3832116aa0051e58012">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
-  <link rel="stylesheet" href="https://brightacademy.ge/assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
+  <link rel="stylesheet" href="../assets/css/divider-text-middle.css?h=dcc46384f0589892295a3299d8a3c9bd">
+  <link rel="stylesheet" href="../assets/css/Navbar-Right-Links-icons.css?h=3f984fb5389c7defeda5d1c79f96d9c5">
+  <link rel="stylesheet" href="../assets/css/slider.css?h=9ee8c020451cd85adcc991a45d07f7a0">
+  <link rel="stylesheet" href="../assets/css/styles.css?h=df5d856d8be600000affa9b112cd3c87">
+  <link rel="stylesheet" href="../assets/css/Team-Horizontal-images.css?h=4f3cfa46e40e236365345fc77963f4b8">
+  <link rel="stylesheet" href="../assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
 
 <style>
 .whatsapp-float {
@@ -60,6 +60,22 @@
   transform: scale(1.1);
 }
 </style>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('ba-lang') !== 'en') return;
+        document.documentElement.className += ' i18n-pending';
+        var s = document.createElement('style');
+        s.id = 'i18n-fouc';
+        s.textContent = 'body{visibility:hidden}';
+        document.head.appendChild(s);
+        setTimeout(function () { if (s.parentNode) s.parentNode.removeChild(s); }, 2000);
+      } catch (e) {}
+    })();
+  </script>
+  <script src="../assets/i18n/en/common.js"></script>
+  <script src="../assets/i18n/en/blog/stresi-bavshvebshi.js"></script>
+  <script src="../assets/js/i18n.js" defer></script>
 </head>
 
 <body>
@@ -76,11 +92,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navcol-2">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../index.html">მთავარი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../brighacademy.html">ჩვენს შესახებ</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../services.html">სერვისები</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../blog.html">ბლოგი</a></li>
-                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../contact.html">კონტაქტი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../index.html" data-i18n="nav.home">მთავარი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../brighacademy.html" data-i18n="nav.about">ჩვენს შესახებ</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../services.html" data-i18n="nav.services">სერვისები</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../blog.html" data-i18n="nav.blog">ბლოგი</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="../contact.html" data-i18n="nav.contact">კონტაქტი</a></li>
+                <li class="nav-item lang-switch">
+                    <div class="lang-dropdown">
+                        <button class="lang-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><svg class="lang-globe" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"></path></svg><span class="lang-current">ქართული</span><svg class="lang-caret" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 9l6 6 6-6"></path></svg></button>
+                        <ul class="lang-menu" role="listbox">
+                            <li><button class="lang-option" type="button" role="option" data-lang="ka"><span>ქართული</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                            <li><button class="lang-option" type="button" role="option" data-lang="en"><span>English</span><svg class="lang-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"></path></svg></button></li>
+                        </ul>
+                    </div>
+                </li>
                 
             </ul>
         </div>
@@ -89,138 +114,138 @@
 <!-- End: Navbar Right Links -->
   <section class="container">
     <div>
-      <h2 style="margin-bottom: 51px;">როგორ ამოვიცნოთ ბავშვებში ფსიქოლოგიური სტრესის ნიშნები, როგორ რეაგირებენ ბავშვები სტრესზე</h2>
+      <h2 style="margin-bottom: 51px;" data-i18n-html="post.head1">როგორ ამოვიცნოთ ბავშვებში ფსიქოლოგიური სტრესის ნიშნები, როგორ რეაგირებენ ბავშვები სტრესზე</h2>
       <div>
         <!-- Start: 1 Row 2 Columns -->
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-lg-3 col-xxl-3" style="margin-bottom: 20px;"><img class="img-fluid" src="../assets/img/stresibavshvebshi.jpg?h=0121f6b461548546524" style="border-radius:35px;"></div>
             <div class="col-md-9 col-lg-9 col-xxl-9" style="padding-right: 25px;padding-left: 25px;;">
-              <h3><a href="#" style="text-decoration:none;"></a></h3>
+              <h3><a href="#" style="text-decoration:none;"></a></h3><span data-i18n-html="post.t1">
 
 
-ბავშვები სხვადასხვანაირად რეაგირებენ მათ ირგვლივ არსებულ უარყოფით მოვლენებზე. ჩვენი კულტურა გავლენას ახდენს იმაზე, თუ როგორ გამოვხატავთ ემოციებს. მაგალითად, ზოგიერთ კულტურაში მიუღებელია ძლიერი ემოციების გამოხატვა, როგორიცაა ხმამაღლა ტირილი, სხვა კულტურებში კი ეს ჩვეულებრივი მოვლენაა.<br><br>
+ბავშვები სხვადასხვანაირად რეაგირებენ მათ ირგვლივ არსებულ უარყოფით მოვლენებზე. ჩვენი კულტურა გავლენას ახდენს იმაზე, თუ როგორ გამოვხატავთ ემოციებს. მაგალითად, ზოგიერთ კულტურაში მიუღებელია ძლიერი ემოციების გამოხატვა, როგორიცაა ხმამაღლა ტირილი, სხვა კულტურებში კი ეს ჩვეულებრივი მოვლენაა.</span><br><br><span data-i18n-html="post.t2">
 
 სტრესის ზოგიერთი ნიშანი არც ისე აშკარაა. სხვადასხვა  ასაკისთვის შეიძლება დამახასიათებელი იყოს  სტრესზე რეაგირების  სხვადასხვა ნიშნები. 
+</span><br><br>
+
+<b data-i18n-html="post.b1">მნიშვნელოვანია, იმის ცოდნა, რომ სტრესისა და კრიზისის პერიოდში ბავშვები ზრდასრულების ქცევებსა და ემოციებს აკვირდებიან და ეძებენ მინიშნებებს საკუთარი ქცევებისა და ემოციების სამართავად!</b></br><span data-i18n-html="post.t3">
+
+ბავშვებში გავრცელებული რეაქციები სტრესზე ბევრი ასეთი რეაქცია სულ ცოტახანს გრძელდება და სტრესულ მოვლენებზე რეაგირების ჩვეულებრივი ფორმაა, მაგრამ თუ ისინი დიდხანს გრძელდება, ბავშვს შეიძლება სპეციალისტის დახმარება დასჭირდეს.</span><br><br>
+
+
+
+<b data-i18n-html="post.b2">რეაგირება ასაკის მიხედვით</b>
+
 <br><br>
-
-<b>მნიშვნელოვანია, იმის ცოდნა, რომ სტრესისა და კრიზისის პერიოდში ბავშვები ზრდასრულების ქცევებსა და ემოციებს აკვირდებიან და ეძებენ მინიშნებებს საკუთარი ქცევებისა და ემოციების სამართავად!</b></br>
-
-ბავშვებში გავრცელებული რეაქციები სტრესზე ბევრი ასეთი რეაქცია სულ ცოტახანს გრძელდება და სტრესულ მოვლენებზე რეაგირების ჩვეულებრივი ფორმაა, მაგრამ თუ ისინი დიდხანს გრძელდება, ბავშვს შეიძლება სპეციალისტის დახმარება დასჭირდეს.<br><br>
-
-
-
-<b>რეაგირება ასაკის მიხედვით</b>
-
-<br><br>
-<b>ასაკი 0-3 წელი</b><br>
+<b data-i18n-html="post.b3">ასაკი 0-3 წელი</b><br>
 
 <ul style="list-style-type:circle;">
-<li>ჩვეულებრივზე მეტად ეხუტება თავის მომვლელს</li>
-<li>რეგრესირებს წინანდელ (ადრინდელი ასაკის) ქცევებამდე</li>
-<li>აღენიშნება ძილთან და კვებასთან დაკავშირებული ცვლილებები</li>
-<li>უფრო იოლად ღიზიანდება</li>
-<li>აღენიშნება მომატებული ჰიპერაქტიურობა</li>
-<li>ჩვეულებრივზე მეტად ეშინია სხვადასხვა საგნის</li>
-<li>ჩვეულებრივზე მეტად მომთხოვნია</li>
-<li>ჩვეულებრივზე უფრო ხშირად ტირის</li>
+<li data-i18n-html="post.li1">ჩვეულებრივზე მეტად ეხუტება თავის მომვლელს</li>
+<li data-i18n-html="post.li2">რეგრესირებს წინანდელ (ადრინდელი ასაკის) ქცევებამდე</li>
+<li data-i18n-html="post.li3">აღენიშნება ძილთან და კვებასთან დაკავშირებული ცვლილებები</li>
+<li data-i18n-html="post.li4">უფრო იოლად ღიზიანდება</li>
+<li data-i18n-html="post.li5">აღენიშნება მომატებული ჰიპერაქტიურობა</li>
+<li data-i18n-html="post.li6">ჩვეულებრივზე მეტად ეშინია სხვადასხვა საგნის</li>
+<li data-i18n-html="post.li7">ჩვეულებრივზე მეტად მომთხოვნია</li>
+<li data-i18n-html="post.li8">ჩვეულებრივზე უფრო ხშირად ტირის</li>
 </ul>
 
-<b>4-6 წელი</b>
+<b data-i18n-html="post.b4">4-6 წელი</b>
 <ul style="list-style-type:circle;">
-<li>ეხუტება უფროსებს</li>
-<li>რეგრესირებს წინანდელ (ადრინდელი ასაკის) ქცევებამდე</li>
-<li>აღენიშნება ძილთან და კვებასთან დაკავშირებული ცვლილებები</li>
-<li>უფრო იოლად ღიზიანდება</li>
-<li>უფრო ცუდად კონცენტრირდება</li>
-<li>ნაკლებად აქტიური ან პირიქით, ჰიპერაქტიურია</li>
-<li>აღარ თამაშობს</li>
-<li>ზრდასრულის როლს ასრულებს</li>
-<li>წყვეტს საუბარს</li>
-<li>ჩვეულებრივზე მეტად შეშფოთებული ან აღელვებულია</li>
+<li data-i18n-html="post.li9">ეხუტება უფროსებს</li>
+<li data-i18n-html="post.li10">რეგრესირებს წინანდელ (ადრინდელი ასაკის) ქცევებამდე</li>
+<li data-i18n-html="post.li11">აღენიშნება ძილთან და კვებასთან დაკავშირებული ცვლილებები</li>
+<li data-i18n-html="post.li12">უფრო იოლად ღიზიანდება</li>
+<li data-i18n-html="post.li13">უფრო ცუდად კონცენტრირდება</li>
+<li data-i18n-html="post.li14">ნაკლებად აქტიური ან პირიქით, ჰიპერაქტიურია</li>
+<li data-i18n-html="post.li15">აღარ თამაშობს</li>
+<li data-i18n-html="post.li16">ზრდასრულის როლს ასრულებს</li>
+<li data-i18n-html="post.li17">წყვეტს საუბარს</li>
+<li data-i18n-html="post.li18">ჩვეულებრივზე მეტად შეშფოთებული ან აღელვებულია</li>
 </ul>
 
 
 
-<b>7-12 წელი</b>
+<b data-i18n-html="post.b5">7-12 წელი</b>
 <ul style="list-style-type:circle;">
-<li>საკუთარ თავშია ჩაკეტილი</li>
-<li>ხშირად დარდობს სხვა დაზარალებულებზე</li>
-<li>აღენიშნება ძილთან და კვებასთან დაკავშირებული ცვლილებები</li>
-<li>ხშირად ეუფლება შიშის გრძნობა</li>
-<li>უფრო იოლად ღიზიანდება</li>
-<li>ხშირად იჩენს აგრესიულობას</li>
-<li>მოუსვენარია</li>
-<li>აღენიშნება მეხსიერებისა და კონცენტრირების პრობლემები</li>
-<li>ფიზიკური სიმპტომები/ ფსიქოსომატიური აშლილობა</li>
-<li>ხშირად საუბრობს ერთსა და იმავე მოვლენაზე, ან იმეორებს ერთსა და იმავე მოძრაობას</li>
-<li>აქვს დანაშაულის გრძნობა ან საკუთარ თავს ადანაშაულებს</li>
+<li data-i18n-html="post.li19">საკუთარ თავშია ჩაკეტილი</li>
+<li data-i18n-html="post.li20">ხშირად დარდობს სხვა დაზარალებულებზე</li>
+<li data-i18n-html="post.li21">აღენიშნება ძილთან და კვებასთან დაკავშირებული ცვლილებები</li>
+<li data-i18n-html="post.li22">ხშირად ეუფლება შიშის გრძნობა</li>
+<li data-i18n-html="post.li23">უფრო იოლად ღიზიანდება</li>
+<li data-i18n-html="post.li24">ხშირად იჩენს აგრესიულობას</li>
+<li data-i18n-html="post.li25">მოუსვენარია</li>
+<li data-i18n-html="post.li26">აღენიშნება მეხსიერებისა და კონცენტრირების პრობლემები</li>
+<li data-i18n-html="post.li27">ფიზიკური სიმპტომები/ ფსიქოსომატიური აშლილობა</li>
+<li data-i18n-html="post.li28">ხშირად საუბრობს ერთსა და იმავე მოვლენაზე, ან იმეორებს ერთსა და იმავე მოძრაობას</li>
+<li data-i18n-html="post.li29">აქვს დანაშაულის გრძნობა ან საკუთარ თავს ადანაშაულებს</li>
 </ul>
 
 
 
-<b>13-17 წელი (თინეიჯერები)</b>
+<b data-i18n-html="post.b6">13-17 წელი (თინეიჯერები)</b>
 <ul style="list-style-type:circle;">
-<li>ძალიან დასევდიანებულია</li>
-<li>გამოხატავს გადაჭარბებულ წუხილს სხვა ადამიანების გამო</li>
-<li>აქვს დანაშაულის ან სირცხვილის გრძნობა</li>
-<li>ჩვეულებრივზე მეტად იჩენს  ავტორიტეტის მიმართ დაუმორჩილებლობას</li>
-<li>ჩვეულებრივზე მეტად რისკავს</li>
-<li>გამოირჩევა აგრესიულობით</li>
-<li>თვითდესტრუქციულია</li>
-<li>აქვს უიმედობის განცდა</li>
+<li data-i18n-html="post.li30">ძალიან დასევდიანებულია</li>
+<li data-i18n-html="post.li31">გამოხატავს გადაჭარბებულ წუხილს სხვა ადამიანების გამო</li>
+<li data-i18n-html="post.li32">აქვს დანაშაულის ან სირცხვილის გრძნობა</li>
+<li data-i18n-html="post.li33">ჩვეულებრივზე მეტად იჩენს  ავტორიტეტის მიმართ დაუმორჩილებლობას</li>
+<li data-i18n-html="post.li34">ჩვეულებრივზე მეტად რისკავს</li>
+<li data-i18n-html="post.li35">გამოირჩევა აგრესიულობით</li>
+<li data-i18n-html="post.li36">თვითდესტრუქციულია</li>
+<li data-i18n-html="post.li37">აქვს უიმედობის განცდა</li>
 </ul>
 
 
-<b>ყველა ასაკობრივი ჯგუფისთვის დამახასიათებელი ფიზიკური რეაქციები</b>
-ეს რეაქციები ასევე შეიძლება იყოს ფიზიკური ავამდყოფობის ნიშნები, ამიტომაც წაიყვანეთ თქვენი შვილი ექიმთან, რათა გამოირიცხოს ნებისმიერი სახის კლინიკური მდგომარეობა<br>
+<b data-i18n-html="post.b7">ყველა ასაკობრივი ჯგუფისთვის დამახასიათებელი ფიზიკური რეაქციები</b><span data-i18n-html="post.t4">
+ეს რეაქციები ასევე შეიძლება იყოს ფიზიკური ავამდყოფობის ნიშნები, ამიტომაც წაიყვანეთ თქვენი შვილი ექიმთან, რათა გამოირიცხოს ნებისმიერი სახის კლინიკური მდგომარეობა</span><br>
 
 
 <ul style="list-style-type:circle;">
-<li>დაღლილობა</li>
-<li>ზეწოლა გულმკერდის არეში</li>
-<li>სუნთქვის უკმარისობა</li>
-<li>პირის სიმშრალე</li>
-<li>სისუსტე კუნთებში</li>
-<li>მუცლის ტკივილი</li>
-<li>თავბრუსხვევა</li>
-<li>კანკალი</li>
-<li>თავის ტკივილები</li>
-<li>საერთო ტკივილები</li>
-<li>საკუთარ თავშია ჩაკეტილი, ან ძალიან წყნარია, ცოტას მოძრაობს ან თითქმის არ მოძრაობს</li>
-<li>ემალება ან თავს არიდებს სხვა ადამიანებს</li>
-<li>არ პასუხობს კითხვებს, არ საუბრობს</li>
-<li>უკიდურესად და მუდმივად აღელვებულია</li>
-<li>აღენიშნება ცუდად ყოფნის ფიზიკური სიმპტომები; კანკალი, თავის ტკივილი, მადის დაკარგვა, ტკივილები</li>
-<li>აგრესიულია, ცდილობს სხვებს აწყენინოს</li>
-<li>დაბნეული ან დეზორიენტირებულია</li>
+<li data-i18n-html="post.li38">დაღლილობა</li>
+<li data-i18n-html="post.li39">ზეწოლა გულმკერდის არეში</li>
+<li data-i18n-html="post.li40">სუნთქვის უკმარისობა</li>
+<li data-i18n-html="post.li41">პირის სიმშრალე</li>
+<li data-i18n-html="post.li42">სისუსტე კუნთებში</li>
+<li data-i18n-html="post.li43">მუცლის ტკივილი</li>
+<li data-i18n-html="post.li44">თავბრუსხვევა</li>
+<li data-i18n-html="post.li45">კანკალი</li>
+<li data-i18n-html="post.li46">თავის ტკივილები</li>
+<li data-i18n-html="post.li47">საერთო ტკივილები</li>
+<li data-i18n-html="post.li48">საკუთარ თავშია ჩაკეტილი, ან ძალიან წყნარია, ცოტას მოძრაობს ან თითქმის არ მოძრაობს</li>
+<li data-i18n-html="post.li49">ემალება ან თავს არიდებს სხვა ადამიანებს</li>
+<li data-i18n-html="post.li50">არ პასუხობს კითხვებს, არ საუბრობს</li>
+<li data-i18n-html="post.li51">უკიდურესად და მუდმივად აღელვებულია</li>
+<li data-i18n-html="post.li52">აღენიშნება ცუდად ყოფნის ფიზიკური სიმპტომები; კანკალი, თავის ტკივილი, მადის დაკარგვა, ტკივილები</li>
+<li data-i18n-html="post.li53">აგრესიულია, ცდილობს სხვებს აწყენინოს</li>
+<li data-i18n-html="post.li54">დაბნეული ან დეზორიენტირებულია</li>
 </ul>
 
 <br><br><br>
 
-<b>ემოციური ჯანრთელობის შემოწმება</b><br>
+<b data-i18n-html="post.b8">ემოციური ჯანრთელობის შემოწმება</b><br><span data-i18n-html="post.t5">
 თუკი ბავშვს მოუწია რაიმე სახის სტრესულ ან კრიზისულ სიატვაციაში ყოფნა, საჭიროა რეგულარულად ჰკითხოთ მას  როგორ გრძნობს თავს. ემოციური მდგომარეობის შემოწმება ნიშნავს პირდაპირ თუ ირიბად ჰკითხოთ“ როგორ არის და ყურადღებით უნდა დააკვირდეთ მის ქცევებს, ყოველდღიურ ფუნქციონირებაში ცვლილებებს. ასეთი შემოწმების ერთერთი ხერხია, ბავშვს სურათის დახატვა თხოვოთ. თხოვეთ, დეტალურად გიამბოთ სურათის შესახებ, რა დახატა, ან რატომ აირჩია ესა თუ ის ფერი. ამით შეგიძლიათ ბავშვს დაეხმაროთ მისი გრძნობების შესახებ საუბარში, თუმცა შეიძლება სურათის უსიტყვოდ ჩვენება ერჩივნოს - ეს ბავშვის გადასაწყვეტია.
 
-<br><br><br>
+</span><br><br><br>
 
-<b>სავარჯიშოები ბავშვის სტრესის შესამსუბუქებლად და მისი კეთილდღეობის მხარდასაჭერად</b><br>
+<b data-i18n-html="post.b9">სავარჯიშოები ბავშვის სტრესის შესამსუბუქებლად და მისი კეთილდღეობის მხარდასაჭერად</b><br><span data-i18n-html="post.t6">
 ქვემოთ მოცემული სავარჯიშოები შეგიძლიათ გააკეთოთ ბავშვთან ერთად, რათა დაეხმაროთ სტრესის შემსუბუქებაში და აღჭურვოთ სტრესთან გამკლავების პოზიტიური სტრატეგიებით, რომლებიც ხელს შეუწყობს მის კეთილდღეობას. ეს სავარჯიშოები თქვენთვისაც სასარგებლო იქნება და შეგიძლიათ ბავშვთან ერთად გააკეთოთ.
 
-<br><br><br>
+</span><br><br><br><span data-i18n-html="post.t7">
 
 
 
-მუცლით სუნთქვა<br>
+მუცლით სუნთქვა</span><br><span data-i18n-html="post.t8">
 ხშირად, როცა სტრესის ქვეშ ვართ, ჩვენი სუნთქვა ზედაპირული ხდება. ამ დროს თითქოს მკერდის ზედა ნაწილით ვსუნთქავთ და გვავიწყდება, რომ ღრმად უნდა ვისუნთქოთ და მუცლით, ანუ მუცლის ღრუთი ჩავისუნთქოთ. მუცლით სუნთქვას დამამშვიდებელი ეფექტი აქვს და  ჟანგბადის ღრმად ფილტვებში შემოშვებაში გვეხმარება.
-<br><br><br>
+</span><br><br><br><span data-i18n-html="post.t9">
 
 როგორ ვაკეთებთ ამას:
-<br>
+</span><br>
 <ul>
-<li>დაადეთ ხელი მუცელს</li>
-<li>5 ჯერ ღრმად ჩაისუნთქეთ, 5 წამი მოანდომეთ შესუნთქვას და 5 წამი ამოსუნთქვას.ცხვირით  ჩაისუნთქეთ და პირით ამოისუნთქეთ.</li>
-<li>აუხსენით ბავშვს, რომ ჩასუნთქვისას მსუბუქად გაბეროს მუცელი, თითქოს ბუშტია, ხოლო ამოსუნთქვისას ნელა გამოუშვას ჰაერი „ბუშტიდან“.</li>
-<li>ან შევთავაზოთ მარტივი თამაში/სავარჯიშოა „ყვავილი და სანთელი“რომელიც ღრმა სუნთქვას უწყობს ხელს, ეს კი სტრესისგან გათავისუფლების საშუალებაა. წარმოიდგინეთ, რომ ერთ ხელში გაქვთ კარგი სურნელის მქონე ყვავილი, ხოლო მეორეში - სანთელი.  დასუნეთ ყვავილი - ცხვირით ნელა შეისუნთქეთ სურნელი; პირიდან ჰაერის ამოსუნთქვით (სულის შებერვით) ჩააქრეთ სანთელი;  რამდენჯერმე რიგრიგობით გაიმეორეთ ეს მოქმედებები .</li>
+<li data-i18n-html="post.li55">დაადეთ ხელი მუცელს</li>
+<li data-i18n-html="post.li56">5 ჯერ ღრმად ჩაისუნთქეთ, 5 წამი მოანდომეთ შესუნთქვას და 5 წამი ამოსუნთქვას.ცხვირით  ჩაისუნთქეთ და პირით ამოისუნთქეთ.</li>
+<li data-i18n-html="post.li57">აუხსენით ბავშვს, რომ ჩასუნთქვისას მსუბუქად გაბეროს მუცელი, თითქოს ბუშტია, ხოლო ამოსუნთქვისას ნელა გამოუშვას ჰაერი „ბუშტიდან“.</li>
+<li data-i18n-html="post.li58">ან შევთავაზოთ მარტივი თამაში/სავარჯიშოა „ყვავილი და სანთელი“რომელიც ღრმა სუნთქვას უწყობს ხელს, ეს კი სტრესისგან გათავისუფლების საშუალებაა. წარმოიდგინეთ, რომ ერთ ხელში გაქვთ კარგი სურნელის მქონე ყვავილი, ხოლო მეორეში - სანთელი.  დასუნეთ ყვავილი - ცხვირით ნელა შეისუნთქეთ სურნელი; პირიდან ჰაერის ამოსუნთქვით (სულის შებერვით) ჩააქრეთ სანთელი;  რამდენჯერმე რიგრიგობით გაიმეორეთ ეს მოქმედებები .</li>
 </ul>
 
 
@@ -228,47 +253,47 @@
 <br><br><br>
 
 
-<b>ჩემი განსაკუთრებული ადგილი</b>
+<b data-i18n-html="post.b10">ჩემი განსაკუთრებული ადგილი</b><span data-i18n-html="post.t10">
 ზოგჯერ გვეჩვენება, რომ სამყარო დამთრგუნველია. თუ ბავშვი ერთი წუთით წარმოიდგენს, რომ იმყოფება ისეთ ადგილას, სადაც სიმშვიდეა და სტრესი არ არის, იგი ნაკლებ სტრესს იგრძნობს. გთავაზობთ სავარჯიშოს, რომელიც ბავშვს ასეთი ადგილის წარმოდგენაში დაეხმარება.
-<br><br>
-<b>როგორ ვაკეთებთ ამას:</b>
+</span><br><br>
+<b data-i18n-html="post.b11">როგორ ვაკეთებთ ამას:</b>
 
 <ul>
-<li>დაჯექით ან დაწექით კომფორტულ პოზაში. დახუჭეთ თვალები და მოდუნდით.</li>
-<li>რამდენჯერმე ნელა ჩაისუნთქეთ ცხვირით და შემოუშვით ჰაერი მუცელში. პირით ამოისუნთქეთ.</li>
-<li>გააგრძელეთ ნელა და მშვიდად სუნთქვა. მშვიდი გრძელი ჩასუნთქვები, შემდეგ მშვიდი გრძელი ამოსუნთქვები.</li>
-<li>გონებაში მოისმინეთ და წარმოიდგინეთ შემდეგი:</li>
+<li data-i18n-html="post.li59">დაჯექით ან დაწექით კომფორტულ პოზაში. დახუჭეთ თვალები და მოდუნდით.</li>
+<li data-i18n-html="post.li60">რამდენჯერმე ნელა ჩაისუნთქეთ ცხვირით და შემოუშვით ჰაერი მუცელში. პირით ამოისუნთქეთ.</li>
+<li data-i18n-html="post.li61">გააგრძელეთ ნელა და მშვიდად სუნთქვა. მშვიდი გრძელი ჩასუნთქვები, შემდეგ მშვიდი გრძელი ამოსუნთქვები.</li>
+<li data-i18n-html="post.li62">გონებაში მოისმინეთ და წარმოიდგინეთ შემდეგი:</li>
 </ul>
 
 
 
-<br><br><br>
+<br><br><br><span data-i18n-html="post.t11">
 
 
 
 „წარმოიდგინეთ, რომ თეთრი ქვიშის პლიაჟზე დგახართ. ადრიანი დილაა და ირგვლივ სიმშვიდეა. მზე ნელა ამოდის და გრძნობთ მის თბილ შუქს სახესა და სხეულზე. თავს ბედნიერად და მშვიდად გრძნობთ. ქვიშა, რომელზეც შიშველი ფეხებით დგახართ, რბილი და თბილია. სახეში მსუბუქი ზღვის სიო გიბერავთ. ცა ლურჯი და მოწმენდილია, მაღლა ჩიტები დაფრინავენ და გალობენ. ადგილი უსაფრთხოა, აქ შეგიძლიათ მოდუნდეთ. ეს ის ადგილია, სადაც ყოველთვის შეგიძლიათ დაბრუნდეთ, რომელიც ყოველთვის იქაა, თქვენს გულში. შეგიძლიათ ნებისმიერ დროს ეწვიოთ, როცა მოისურვებთ. ახლა, ძალიან ნელა, თანდათანობით, ყურადღება ისევ თქვენს სუნთქვაზე - ჩასუნთქვისა და ამოსუნთქვის მშვიდ რიტმზე გადმოიტანეთ. ყურადღება მიაქციეთ, როგორ ეხება ჰაერი თქვენს კანს. ძალიან მსუბუქად გაამოძრავეთ ხელისა და ფეხის თითები. ჩაისუნთქეთ და ფართოდ გაიწელეთ. ღრმად ამოისუნთქეთ. როცა მზად იქნებით, გაახილეთ თვალები.“
 
-<br><br><br>
+</span><br><br><br>
 
 
-<b>წერილის დაწერა</b><br>
+<b data-i18n-html="post.b12">წერილის დაწერა</b><br><span data-i18n-html="post.t12">
 თუ ბავშვი ვერ ახერხებს მეგობრებისა და ოჯახის წევრების ნახვას, მათთან ურთიერთობის აღსანიშნავად წერილის დაწერა დაეხმარებათ, მაშინაც კი, როცა ეს ადამიანები მათ გვერდით არ იმყოფებიან.
 
 
-<br><br><br>
-როგორ ვაკეთებთ ამას:<br>
+</span><br><br><br><span data-i18n-html="post.t13">
+როგორ ვაკეთებთ ამას:</span><br>
 <ul>
-<li>თხოვეთ ბავშვს, საყვარელ ადამიანს, ან იმას, ვინც დიდი ხანია არ უნახავს, მიწეროს წერილი ან დახატოს მისი სურათი</li>
-<li>რას ეტყოდით მათ, დღეს თქვენს გვერდით რომ ყოფილიყვნენ?</li>
-<li>ამ ადამიანებში რა გიყვართ ყველაზე მეტად?</li>
-<li>მათთან დაკავშირებული რა მოგონებები გგვრით ღიმილს?</li>
+<li data-i18n-html="post.li63">თხოვეთ ბავშვს, საყვარელ ადამიანს, ან იმას, ვინც დიდი ხანია არ უნახავს, მიწეროს წერილი ან დახატოს მისი სურათი</li>
+<li data-i18n-html="post.li64">რას ეტყოდით მათ, დღეს თქვენს გვერდით რომ ყოფილიყვნენ?</li>
+<li data-i18n-html="post.li65">ამ ადამიანებში რა გიყვართ ყველაზე მეტად?</li>
+<li data-i18n-html="post.li66">მათთან დაკავშირებული რა მოგონებები გგვრით ღიმილს?</li>
 </ul>
 
-<br>
+<br><span data-i18n-html="post.t14">
 მაგრამ თუ ისინი დიდხანს გრძელდება, ბავშვს შეიძლება სპეციალისტის-ბავსშვათ და მოზარდთა ფსიქოლოგის დახმარება დასჭირდეს.
 
 
-            </div>
+            </span></div>
           </div>
         </div><!-- End: 1 Row 2 Columns -->
       </div>
@@ -287,7 +312,7 @@
     @media(max-width:768px){.related-btn{display:none;}}
   </style>
   <section class="container" style="margin-top: 50px;">
-    <h4 style="margin-bottom:25px;">სხვა ბლოგები:</h4>
+    <h4 style="margin-bottom:25px;" data-i18n="common.more_articles">სხვა ბლოგები:</h4>
     <div class="related-wrap">
       <button class="related-btn related-btn-prev" onclick="this.parentElement.querySelector('.related-carousel').scrollBy({left:-300,behavior:'smooth'})">&#8249;</button>
       <div class="related-carousel">
@@ -342,7 +367,7 @@
     <div class="container-fluid pt-4 m-0 p-0 pt-5" style="display:none;">
       <div class="row mb-3">
         <div class="col-md-8 col-xl-6 text-start mx-auto">
-          <h3 class="text-center" style="color: rgb(109,192,174);">ჩვენი პროფესიონალი გუნდი:</h3>
+          <h3 class="text-center" style="color: rgb(109,192,174);" data-i18n="common.team_heading">ჩვენი პროფესიონალი გუნდი:</h3>
         </div>
       </div>
       <div class="row">
@@ -362,7 +387,7 @@
           <p class="text-center"></p>
         </div>
         <div class="col-md-3 text-center d-none d-lg-inline">
-          <h5 style="color: rgb(109,192,174);">მედია</h5>
+          <h5 style="color: rgb(109,192,174);" data-i18n="footer.media">მედია</h5>
           <ul class="list-unstyled" style="line-height:30px;">
             <li><a href="https://www.facebook.com/BrightAcademy.ge" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="margin-right: 4px;">
                   <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor"></path>
@@ -387,7 +412,7 @@
           </ul>
         </div>
         <div class="col-md-4 col-lg-2">
-          <h5 style="color: rgb(109,192,174);">გვერდები</h5>
+          <h5 style="color: rgb(109,192,174);" data-i18n="footer.pages">გვერდები</h5>
           <ul class="list-unstyled" style="line-height:30px;">
             <li><a href="../index.html">მთავარი</a></li>
             <li><a href="../services.html">სერვისები</a></li>
@@ -398,7 +423,7 @@
           </ul>
         </div>
         <div class="col-md-5 col-lg-4 text-center">
-          <h5 style="color: rgb(109,192,174);">კონტაქტი</h5>
+          <h5 style="color: rgb(109,192,174);" data-i18n="footer.contact">კონტაქტი</h5>
           <ul class="list-unstyled" style="line-height:35px;">
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
@@ -407,14 +432,14 @@
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                 <path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"></path>
-              </svg>&nbsp; 09:00 - 19:00</li>
+              </svg>&nbsp; <span data-i18n="footer.hours">09:00 - 19:00</span></li>
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                 <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-              </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
+              </svg>&nbsp; <a href="https://maps.app.goo.gl/UGmHseREwKRXB6tM7" target="_blank" data-i18n="footer.addr.saburtalo">საბურთალო: 33 ონიაშვილის ქუჩა</a></li>
                     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                             <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
+                        </svg>&nbsp; <a href="https://maps.app.goo.gl/ACugUPEyhNDwsCxt6" target="_blank" data-i18n="footer.addr.dighomi">დიღომი: 83 ასურელი მამის ქუჩა</a></li>
           </ul>
         </div>
       </div>
@@ -431,10 +456,10 @@
           <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"></path>
         </svg></a></div>
     <div class="container text-white py-4 py-lg-5">
-      <p class="mb-0" style="color:#fff;"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
+      <p class="mb-0" style="color:#fff;" data-i18n-html="footer.brand"><br>ბრაით აკადემი *&nbsp;Bright Academy</p>
     </div>
       <div class="container text-center pb-3">
-        <p class="mb-0" style="font-size: 12px; color: #888;">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
+        <p class="mb-0" style="font-size: 12px; color: #888;" data-i18n-html="footer.credit">ვებ გვერდი დამზადებულია <a href="https://itconnect.ge" target="_blank" style="color: rgb(109,192,174); text-decoration: none;">ITConnect</a>-ის მიერ</p>
     </div>
 </footer><!-- End: Footer Dark -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -443,7 +468,7 @@
   <script src="../assets/js/slider.js?h=75db9baacc24c65f36dd8b8e3d601eee"></script>
 
 <a href="https://wa.me/+995597104028" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" class="whatsapp-icon">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" data-i18n-attr="alt:common.whatsapp_alt" class="whatsapp-icon">
 </a>
 </body>
 

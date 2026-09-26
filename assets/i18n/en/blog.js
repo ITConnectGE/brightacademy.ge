@@ -6,6 +6,7 @@ window.I18N = Object.assign(window.I18N || {}, {
 
   'blog.h1': 'Blog',
 
+  'blog.t8': 'Endless questions: how asking questions supports a child’s development',
   'blog.t1': 'Early identification and support project for child development',
   'blog.t2': 'Attachment, the foundation of development in childhood and adulthood',
   'blog.t3': 'Pre-school skills',
@@ -14,6 +15,8 @@ window.I18N = Object.assign(window.I18N || {}, {
   'blog.t6': 'The Denver model',
   'blog.t7': 'Child development',
 
+  'blog.e8':
+    'Children asking questions is not just an expression of curiosity: questions are an important mechanism of cognitive development. Research shows that preschoolers ask on average about 107 questions an hour. How should parents answer, and why does a child repeat the same question ...',
   'blog.e1':
     'To mark World Autism Awareness Day, Bright Academy has been running a social project since 2023 aimed at the early identification of difficulties in child development and at timely, effective support. The current project matters especially for families who are unable to fund the services they need on their own ...',
   'blog.e2':

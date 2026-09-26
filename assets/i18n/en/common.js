@@ -24,6 +24,9 @@ window.I18N = Object.assign(window.I18N || {}, {
   'common.logo_alt': 'Bright Academy',
 
   /* "More articles" cards, repeated at the foot of every blog post */
+  'related.t.bavshvis-kitkhvebi': 'Endless questions: how asking questions supports a child’s development',
+  'related.e.bavshvis-kitkhvebi':
+    'Children asking questions is not just an expression of curiosity: questions are an important mechanism of cognitive development ...',
   'related.t.adreuli-intervencia': 'Early identification and support project for child development',
   'related.e.adreuli-intervencia':
     'To mark World Autism Awareness Day, Bright Academy is running a social project ...',
